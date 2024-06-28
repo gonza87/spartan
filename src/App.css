@@ -1,0 +1,97 @@
+/*** Estilos generales ***/
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: #000000; */
+  font-family: "EB Garamond", serif;
+  
+}
+body {
+  background-color: black !important;
+ 
+  
+}
+
+
+/*** NavBar ***/
+.nav {
+  background-color: #000000;
+ height: 100px;
+ font-size: 1.5rem;
+  z-index: 3;
+}
+.menuNav {
+  color: #F5EDED !important;
+  text-decoration: none;
+  text-decoration: none;
+  border-style: none;
+
+}
+
+.menuNav:hover {
+  color: #D72323 !important;
+  
+}
+
+
+.hero-section {
+  position: relative;
+  height: 70vh; /* Ajusta según tus necesidades */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+   
+   
+}
+
+.hero-background {
+  position: absolute;
+ 
+  width: 100%;
+  height: 95%;
+  object-fit:fill;
+  opacity: 0.4; /* Ajusta la opacidad según prefieras */
+  z-index: 1;
+}
+
+.hero-text {
+
+  z-index: 2;
+  color: #F5EDED; /* Asegúrate de que el texto sea visible */
+  
+
+}
+
+
+.hero-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+  z-index: 2;
+}
+
+.titleHero{
+  font-size: 3rem;
+}
+
+.titleHero span{
+  color: #D72323;
+}
+
+.btnAsesoramiento{
+  background-color: #D72323;
+  color: #F5EDED;
+  height: auto;
+  font-size: 1.2rem;
+  padding: 6px 20px;
+  border-style: none;
+ align-self: center;
+}
+
