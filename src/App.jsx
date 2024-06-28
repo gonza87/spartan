@@ -1,6 +1,8 @@
+import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
-import HeroSection from "./components/HeroSection";
-import Main from "./components/Main";
+import Home from "./pages/Home";
+import Contact from "./pages/Contact";
+
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -8,8 +10,10 @@ function App() {
   return (
     <>
       <Header />
-      <HeroSection />
-      <Main />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
     </>
   );
 }

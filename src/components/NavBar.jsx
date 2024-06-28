@@ -9,7 +9,8 @@ function NavBar() {
     <Navbar expand="lg" className="nav">
       <Container>
         <Navbar.Brand className="menuNav" href="#home">
-          React-Bootstrap
+          <img className="logo" src="/img/logo.PNG" alt="logo" />
+          <span className="titleLogo">Spartan</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
