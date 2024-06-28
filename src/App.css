@@ -6,7 +6,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* background-color: #000000; */
   font-family: "EB Garamond", serif;
   
 }
@@ -57,7 +56,7 @@ body {
   display: flex;
   
   align-items: center;
- 
+  
    
    
 }
@@ -94,7 +93,7 @@ body {
 
 
 .titleHero{
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 .titleHero span{
@@ -105,7 +104,7 @@ body {
   background-color: #D72323;
   color: #F5EDED;
   height: auto;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   padding: 6px 20px;
   border-style: none;
  align-self: center;
@@ -144,7 +143,7 @@ body {
 .titleServices{
   margin-top: 5px;
   text-align: center;
-  font-size: 2rem;
+  font-size: 3.5rem;
   
 }
 
@@ -188,3 +187,31 @@ font-size: 1.5rem;
 }
 
 /****************************************************************************************************************************************/
+
+
+
+
+.imgContact{
+  background-image: url("./img/spartan01.jpg");
+ opacity: 0.3;
+height: 690px;
+background-position: center 25%;
+background-repeat: no-repeat;
+background-size: cover;
+
+  box-shadow: inset 0 0 14px 14px rgba(0, 0, 0, 1.5);
+
+
+
+}
+
+.titleContact{
+  font-size: 3.5rem;
+  color: #F5EDED;
+  text-align: center;
+ 
+  top: 40%;
+  position: absolute;
+  
+}
+
