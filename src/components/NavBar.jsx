@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -15,19 +16,19 @@ function NavBar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link className="menuNav" href="#home">
+            <Link className="menuNav" to={"/"}>
               Inicio
-            </Nav.Link>
+            </Link>
 
-            <Nav.Link className="menuNav" href="#link">
+            <Link className="menuNav" to={"/contact"}>
               Nosotros
-            </Nav.Link>
-            <Nav.Link className="menuNav" href="#link">
+            </Link>
+            <Link className="menuNav" to={"/contact"}>
               Trabaja con nosotros
-            </Nav.Link>
-            <Nav.Link className="menuNav" href="#link">
+            </Link>
+            <Link className="menuNav" to={"/contact"}>
               Contacto
-            </Nav.Link>
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
