@@ -22,7 +22,6 @@ const TestimonialsCarousel = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2200,
-    nextArrow: null,
 
     responsive: [
       {
