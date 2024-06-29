@@ -4,6 +4,7 @@ import { GiCenturionHelmet } from "react-icons/gi";
 import { GiSwordWound } from "react-icons/gi";
 import { GiSwordwoman } from "react-icons/gi";
 import { GiDoorway } from "react-icons/gi";
+import TestimonialsCarousel from "./TestimonialsCarousel";
 function Main() {
   return (
     <div className="main">
@@ -29,6 +30,10 @@ function Main() {
             <p>Limpieza de obra</p>
           </div>
         </div>
+      </div>
+      <div className="main-content container">
+        <h2 className="text-center titleTestimonos">Testimonios</h2>
+        <TestimonialsCarousel />
       </div>
     </div>
   );

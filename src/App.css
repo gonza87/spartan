@@ -140,8 +140,9 @@ body {
 
 .main {
   position: relative;
-  height: 70vh; /* Ajusta según tus necesidades */
+  height: auto; /* Ajusta según tus necesidades */
   display: flex;
+  flex-direction: column;
   background-image: url(".././img/spartan04.jpg");
   background-size: cover;
   overflow: hidden; /* Asegura que el contenido dentro no se desborde */
@@ -282,3 +283,44 @@ background-size: cover;
 
 
 /****************************************************************************************************************************************/
+.titleTestimonos{
+  margin-top: 100px;
+  font-size:  3.5rem;
+}
+
+
+
+/* En tu archivo CSS (e.g., App.css o TestimonialsCarousel.css) */
+.testimonials-carousel {
+
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  margin-bottom: 500px;
+}
+
+.testimonial-card {
+  background: #111111;
+  height: 150px;
+  padding: 20px;
+  
+  border-radius: 10px;
+  text-align: center;
+  
+}
+
+.testimonial-card p {
+  font-size: 1.2rem;
+  color: #F5EDED;
+}
+
+.testimonial-card h4 {
+  margin-top: 10px;
+  font-size: 1.4rem;
+  color: #D72323;
+}
+
+.slick-prev,
+.slick-next {
+  display: none !important;
+}
