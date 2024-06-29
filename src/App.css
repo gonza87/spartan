@@ -284,7 +284,7 @@ background-size: cover;
 
 /****************************************************************************************************************************************/
 .titleTestimonos{
-  margin-top: 100px;
+  margin-top: 250px;
   font-size:  3.5rem;
 }
 
@@ -300,7 +300,8 @@ background-size: cover;
 }
 
 .testimonial-card {
-  background: #111111;
+  background: rgb(6, 7, 7,1);
+  background: transparent;
   height: 150px;
   padding: 20px;
   
