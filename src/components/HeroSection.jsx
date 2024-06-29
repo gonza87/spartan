@@ -8,12 +8,12 @@ function HeroSection() {
         alt="Background"
         className="hero-background"
       /> */}
-      <div className="hero-gradient"></div>
-      <div className="hero-text container">
+      {/* <div className="hero-gradient"></div> */}
+      <div className="hero-content container">
         <div className="row">
           <div className="col-md-7">
             <h1 className="titleHero">
-              Somos una empresa que te brinda solucioines en{" "}
+              Somos una empresa que te brinda soluciones en{" "}
               <span>Seguridad</span>
             </h1>
           </div>

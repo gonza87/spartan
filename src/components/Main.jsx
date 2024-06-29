@@ -7,9 +7,9 @@ import { GiDoorway } from "react-icons/gi";
 function Main() {
   return (
     <div className="main">
-      <img src=".././img/spartan04.jpg" alt="" className="main-background" />
-      <div className="combined-gradient"></div>
-      <div className="main-text container">
+      {/* <img src=".././img/spartan04.jpg" alt="" className="main-background" /> */}
+      {/* <div className="combined-gradient"></div> */}
+      <div className="main-content container">
         <h2 className="titleServices">Nuestros Servicios</h2>
         <div className="contServices">
           <div className="text-center cardService">

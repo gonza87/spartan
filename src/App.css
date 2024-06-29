@@ -7,7 +7,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "EB Garamond", serif;
-  
+  font-weight: 600;
 }
 body {
   background-color: black !important;
@@ -29,7 +29,7 @@ body {
   text-decoration: none;
   text-decoration: none;
   border-style: none;
-  margin: 5px;
+  margin: 10px;
 
 }
 
@@ -45,6 +45,7 @@ body {
 }
 .titleLogo{
   font-family: "Cinzel", serif;
+ 
   font-size: 1.5rem;
 }
 
@@ -58,7 +59,7 @@ body {
   background-image: url(".././img/spartan02.jpg");
   background-size: cover;
   overflow: hidden; /* Asegura que el contenido dentro no se desborde */
-  box-shadow: inset 0 0 14px 14px rgba(0, 0, 0, 1.5);
+  box-shadow: inset 0 0 14px 16px rgba(7, 8, 8, 1);
   background-position: center 25%;
 }
 
@@ -73,25 +74,15 @@ body {
   z-index: 1; /* Asegura que la capa esté por debajo del contenido */
 }
 
-.hero-text {
+.hero-content {
   position: relative; /* Asegura que el texto esté por encima de la capa oscura */
   z-index: 2;
   color: #fff; /* Color del texto sobre la imagen */
 }
 
-.btnAsesoramiento {
-  background-color: transparent; /* Fondo transparente para el botón */
-  color: #fff; /* Color del texto del botón */
-  border: 2px solid #fff; /* Borde blanco para el botón */
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-}
 
-.btnAsesoramiento:hover {
-  background-color: #fff; /* Cambio de color de fondo al pasar el mouse */
-  color: #000; /* Cambio de color de texto al pasar el mouse */
-}
+
+
 
 
  .titleHero{
@@ -103,14 +94,24 @@ body {
 }
 
 .btnAsesoramiento{
-  background-color: #D72323;
+  background-color: #7c0000;
   color: #F5EDED;
   height: auto;
   font-size: 1.5rem;
-  padding: 6px 20px;
+  padding: 10px 30px;
   border-style: none;
  align-self: center;
+ cursor: pointer;
+ transition: transform 0.5s ease; /* Transición suave */
+ 
 } 
+
+.btnAsesoramiento:hover {
+  background-color: #D72323; /* Cambio de color de fondo al pasar el mouse */
+  color:#000000; /* Cambio de color de texto al pasar el mouse */
+  
+  transform: translateY(-10px);
+}
 
 /****************************************************************************************************************************************/
 /*** Main ***/
@@ -119,22 +120,27 @@ body {
   position: relative;
   height: 70vh; /* Ajusta según tus necesidades */
   display: flex;
+  background-image: url(".././img/spartan04.jpg");
+  background-size: cover;
+  overflow: hidden; /* Asegura que el contenido dentro no se desborde */
+  box-shadow: inset 0 0 14px 14px rgba(7, 8, 8, 1);
+  background-position: center 1%;
  
-   
-   
 }
 
-.main-background {
-
+.main::before {
+  content: "";
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 100vh;
-  object-fit:fill;
-  opacity: 0.3; /* Ajusta la opacidad según prefieras */
-  z-index: 1;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); /* Capa oscura para reducir el brillo */
+  z-index: 1; /* Asegura que la capa esté por debajo del contenido */
 }
 
-.main-text {
+
+.main-content {
 
   z-index: 2;
   color: #F5EDED; /* Asegúrate de que el texto sea visible */
