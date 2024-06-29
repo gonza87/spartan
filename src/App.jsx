@@ -4,9 +4,8 @@ import { CSSTransition, TransitionGroup } from "react-transition-group";
 import Header from "./components/Header";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
-
-import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
 
 function App() {
   const location = useLocation();

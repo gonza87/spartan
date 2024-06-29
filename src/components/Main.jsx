@@ -13,19 +13,19 @@ function Main() {
         <h2 className="titleServices">Nuestros Servicios</h2>
         <div className="contServices">
           <div className="text-center cardService">
-            <GiSwordwoman color="red" size="7em" />
+            <GiSwordwoman color="#D72323" size="6em" />
             <p>Seguridad y vigilancia</p>
           </div>
           <div className="text-center cardService">
-            <GiDoorway color="red" size="7em" />
+            <GiDoorway color="#D72323" size="6em" />
             <p>Portería</p>
           </div>
           <div className="text-center cardService">
-            <GiSwordWound color="red" size="7em" />
+            <GiSwordWound color="#D72323" size="6em" />
             <p>Limpieza y mantenimiento</p>
           </div>
           <div className="text-center cardService">
-            <GiCenturionHelmet color="red" size="7em" />
+            <GiCenturionHelmet color="#D72323" size="6em" />
             <p>Limpieza de obra</p>
           </div>
         </div>

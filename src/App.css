@@ -12,6 +12,7 @@
 body {
   background-color: black !important;
  
+ 
   
 }
 
@@ -20,8 +21,6 @@ body {
 /*** NavBar ***/
 .nav {
   background-color: #000000;
- 
- font-size: 1.5rem;
   z-index: 3;
 }
 .menuNav {
@@ -29,9 +28,32 @@ body {
   text-decoration: none;
   text-decoration: none;
   border-style: none;
-  margin: 10px;
+ 
+  font-size: 1.5rem;
 
 }
+.nav .menuNav {
+  font-family: "EB Garamond", serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 10px 15px; /* Espaciado interno de los enlaces */
+  text-decoration: none; /* Quitar subrayado de los enlaces */
+  
+}
+.custom-dropdown-menu {
+  
+  border: 1px solid #000000; /* Borde del menú */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra del menú */
+  background-color: #000000; /* Color de fondo del menú */
+ 
+}
+
+.custom-dropdown-menu a:hover{
+  background-color: #D72323;
+  color: black !important;
+  
+}
+
 
 .menuNav:hover {
   color: #D72323 !important;
@@ -159,13 +181,19 @@ body {
   margin-top: 50px;
   display: flex;
   justify-content: center;
-  gap:50px;
+  gap:70px;
   flex-wrap: wrap;
+  cursor: pointer;
+ 
 }
 .cardService p{
 font-size: 1.5rem;
 }
 
+.cardService:hover{
+  transform: scale(1.2);
+  color: #D72323;
+}
 
 
 
