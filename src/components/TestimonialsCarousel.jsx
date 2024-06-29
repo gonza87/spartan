@@ -1,22 +1,19 @@
-// TestimonialsCarousel.js
 import React from "react";
+import { useState, useEffect } from "react";
 import { IoMdQuote } from "react-icons/io";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const testimonials = [
-  { id: 1, text: "¡Este producto es increíble!", author: "Juan Pérez" },
-  { id: 2, text: "Servicio al cliente excepcional.", author: "Ana López" },
-  {
-    id: 3,
-    text: "Definitivamente recomendaría esto a mis amigos.",
-    author: "Luis Gómez",
-  },
-  // Agrega más testimonios aquí
-];
-
 const TestimonialsCarousel = () => {
+  const [testimonials, setTestimonials] = useState([]);
+
+  useEffect(() => {
+    fetch("/data/testimonials.json")
+      .then((response) => response.json())
+      .then((data) => setTestimonials(data));
+  }, []);
+
   const settings = {
     dots: true,
     infinite: true,

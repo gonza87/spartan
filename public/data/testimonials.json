@@ -1,0 +1,18 @@
+[
+    {
+      "id": 1,
+      "text": "¡Este producto es increíble!",
+      "author": "Juan Pérez"
+    },
+    {
+      "id": 2,
+      "text": "Servicio al cliente excepcional.",
+      "author": "Ana López"
+    },
+    {
+      "id": 3,
+      "text": "Definitivamente recomendaría esto a mis amigos.",
+      "author": "Luis Gómez"
+    }
+   
+  ]
