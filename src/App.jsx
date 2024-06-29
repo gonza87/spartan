@@ -4,6 +4,8 @@ import { CSSTransition, TransitionGroup } from "react-transition-group";
 import Header from "./components/Header";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
+import Footer from "./components/Footer";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
@@ -21,6 +23,7 @@ function App() {
           </Routes>
         </CSSTransition>
       </TransitionGroup>
+      <Footer />
     </>
   );
 }
