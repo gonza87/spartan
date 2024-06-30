@@ -17,11 +17,11 @@ const TestimonialsCarousel = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 300,
+    speed: 800,
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2200,
+    autoplaySpeed: 3500,
 
     responsive: [
       {
@@ -49,7 +49,7 @@ const TestimonialsCarousel = () => {
             <p>{testimonial.text}</p>
             <div className="d-flex justify-content-around align-items-center">
               <h4>{testimonial.author}</h4>
-              <IoMdQuote color="#D72323" size="1.5rem" />
+              <IoMdQuote color="#D72323" size="2rem" />
             </div>
           </div>
         ))}

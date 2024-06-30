@@ -257,6 +257,8 @@ background-size: cover;
 /*** Footer ***/
 
 .footer {
+  margin-top: 50px;
+  margin-bottom: 50px;
   background-color: #000000;
   color: #F5EDED;
   font-size: 1.2rem;
@@ -314,13 +316,13 @@ background-size: cover;
 }
 
 .testimonial-card p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: #F5EDED;
 }
 
 .testimonial-card h4 {
   margin-top: 10px;
-  font-size: 1.4rem;
+  font-size: 2rem;
   color: #D72323;
 }
 .slick-slide {
