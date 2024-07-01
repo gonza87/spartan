@@ -315,36 +315,31 @@ font-size: 1.5rem;
   margin: 0 auto;
 }
 
-.form-group {
-  margin-bottom: 1rem;
+.field {
+  margin-bottom: 10px;
 }
 
-.form-control {
-  width: 100%;
-  padding: 0.5rem;
+.field label {
+  display: block;
   
-  border-radius: 10px; /* Bordes redondeados */
-  background-color: rgb(10, 10, 9, 1); /* Fondo negro */
-  color: #fff; /* Color del texto */
-  outline: none;
-  
-  border: 2px solid transparent;
-  transition: border-color 0.3s;
-
+  font-size: 2rem;
+  color: white;
 }
 
-.form-control:focus {
-  border-color: #dd6e6e; /* Color del borde cuando está enfocado */
-  background-color: rgb(10, 10, 9, 1);
-  
+.field input {
+  display: block;
+  min-width: 250px;
+  line-height: 1.5;
+  font-size: 14px;
 }
-.btnSendContact{
-  background-color: rgb(10, 10, 9, 1);
+
+input[type="submit"] {
+  display: block;
+  padding: 6px 30px;
+  font-size: 14px;
+  background-color: #4460AA;
   color: #fff;
-  border-color: #dd6e6e;
-  border-style: none;
-  border-radius: 10px;
-  padding: 5px 10px;
+  border: none
 }
 
 /* .imgContact{

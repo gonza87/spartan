@@ -1,4 +1,6 @@
 import React from "react";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import { useState } from "react";
 import { VscSend } from "react-icons/vsc";
 import { IoCopyOutline } from "react-icons/io5";
@@ -6,28 +8,51 @@ import { IoCallOutline } from "react-icons/io5";
 import { FaWhatsapp } from "react-icons/fa";
 
 function Contact() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+  const form = useRef();
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-  };
-
-  const handleSubmit = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
-    // Aquí puedes manejar el envío del formulario
-    console.log(formData);
+
+    emailjs
+      .sendForm(
+        "service_f4kb13mspartan",
+        "template_rlembvgspartan",
+        form.current,
+        {
+          publicKey: "m3I44tUotLmRmkF54",
+        }
+      )
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
   };
-  const email = "seguridad@gmail.com";
-  const subject = "";
-  const body = "";
+  // const [formData, setFormData] = useState({
+  //   name: "",
+  //   email: "",
+  //   message: "",
+  // });
+
+  // const handleChange = (e) => {
+  //   const { name, value } = e.target;
+  //   setFormData({
+  //     ...formData,
+  //     [name]: value,
+  //   });
+  // };
+
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   // Aquí puedes manejar el envío del formulario
+  //   console.log(formData);
+  // };
+  // const email = "seguridad@gmail.com";
+  // const subject = "";
+  // const body = "";
 
   const handleSendEmail = () => {
     const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(
@@ -68,7 +93,7 @@ function Contact() {
       <div className="container">
         <div className="row contact-content">
           <div className="col-md-12">
-            <form onSubmit={handleSubmit} className="contact-form">
+            {/* <form onSubmit={handleSubmit} className="contact-form">
               <div className="form-group">
                 <label htmlFor="name">Nombre</label>
                 <input
@@ -104,6 +129,15 @@ function Contact() {
               <button type="submit" className="btnSendContact">
                 Enviar
               </button>
+            </form> */}
+            <form className="field" ref={form} onSubmit={sendEmail}>
+              <label>Name</label>
+              <input type="text" name="user_name" />
+              <label>Email</label>
+              <input type="email" name="user_email" />
+              <label>Message</label>
+              <textarea name="message" />
+              <input type="submit" value="Send" />
             </form>
           </div>
           <div className="col-md-6">
