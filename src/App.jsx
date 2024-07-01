@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import Header from "./components/Header";
@@ -11,21 +11,27 @@ import "./App.css";
 
 function App() {
   const location = useLocation();
+  const nodeRef = useRef(null); // Create a ref
 
   return (
     <>
       <Header />
       <TransitionGroup>
-        <CSSTransition key={location.key} classNames="page" timeout={300}>
-          <Routes location={location}>
-            <Route path="/" element={<Home />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
+        <CSSTransition
+          key={location.key}
+          classNames="page"
+          timeout={300}
+          nodeRef={nodeRef} // Pass the ref here
+        >
+          <div ref={nodeRef}>
+            <Routes location={location}>
+              <Route path="/" element={<Home />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
+          </div>
         </CSSTransition>
       </TransitionGroup>
-      <>
-        <Footer></Footer>
-      </>
+      <Footer />
     </>
   );
 }
