@@ -14,8 +14,8 @@ function Contact() {
     e.preventDefault();
 
     emailjs
-      .sendForm("service_d64lp8a", "template_ttgho2k", form.current, {
-        publicKey: "m3I44tUotLmRmkF54",
+      .sendForm("service_als3jen", "template_n0ho9al", form.current, {
+        publicKey: "-lChSG6BfOJBOWtiG",
       })
       .then(
         () => {
@@ -72,7 +72,7 @@ function Contact() {
                 <input
                   className="form-control"
                   type="text"
-                  name="user_name "
+                  name="user_name"
                   id="user_name"
                 />
               </div>
