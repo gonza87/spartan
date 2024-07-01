@@ -261,12 +261,91 @@ font-size: 1.5rem;
 }
 
 .titleContact{
-  font-size: 3.5rem;
+  font-size: 6rem;
   color: #F5EDED;
   text-align: center;
   
 } 
 
+
+
+
+
+
+
+.contenedorDatos{
+  background-color: #000000;
+  border-color: #7c0000;
+  height: 400px;
+  color: #F5EDED;
+  text-align: center;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+.titleDatos{
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.textoDatos{
+  font-size: 1.2rem;
+}
+
+.contenedorHorarios{
+  background-color: #000000;
+  height: 400px;
+  color:#F5EDED ;
+  text-align: center;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btnDatos{
+  color: #D72323;
+  cursor: pointer;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.5rem;
+  
+  border-radius: 10px; /* Bordes redondeados */
+  background-color: rgb(10, 10, 9, 1); /* Fondo negro */
+  color: #fff; /* Color del texto */
+  outline: none;
+  
+  border: 2px solid transparent;
+  transition: border-color 0.3s;
+
+}
+
+.form-control:focus {
+  border-color: #dd6e6e; /* Color del borde cuando está enfocado */
+  background-color: rgb(10, 10, 9, 1);
+  
+}
+.btnSendContact{
+  background-color: rgb(10, 10, 9, 1);
+  color: #fff;
+  border-color: #dd6e6e;
+  border-style: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
 
 /* .imgContact{
   background-image: url("./img/spartan01.jpg");
