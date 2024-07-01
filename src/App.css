@@ -341,7 +341,42 @@ input[type="submit"] {
   color: #fff;
   border: none
 }
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
 
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.5rem;
+  
+  border-radius: 10px; /* Bordes redondeados */
+  background-color: rgb(10, 10, 9, 1); /* Fondo negro */
+  color: #fff; /* Color del texto */
+  outline: none;
+  
+  border: 2px solid transparent;
+  transition: border-color 0.3s;
+
+}
+
+.form-control:focus {
+  border-color: #dd6e6e; /* Color del borde cuando está enfocado */
+  background-color: rgb(10, 10, 9, 1);
+  
+}
+.btnSendContact{
+  background-color: rgb(10, 10, 9, 1);
+  color: #fff;
+  border-color: #dd6e6e;
+  border-style: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
 /* .imgContact{
   background-image: url("./img/spartan01.jpg");
  opacity: 0.3;

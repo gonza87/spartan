@@ -66,51 +66,27 @@ function Contact() {
       <div className="container">
         <div className="row contact-content">
           <div className="col-md-12">
-            {/* <form onSubmit={handleSubmit} className="contact-form">
+            <form className="contact-form" ref={form} onSubmit={sendEmail}>
               <div className="form-group">
-                <label htmlFor="name">Nombre</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  className="form-control"
-                />
+                <label>Name</label>
+                <input className="form-control" type="text" name="user_name" />
               </div>
               <div className="form-group">
-                <label htmlFor="email">Email</label>
+                <label>Email</label>
                 <input
+                  className="form-control"
                   type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  className="form-control"
+                  name="user_email"
                 />
               </div>
               <div className="form-group">
-                <label htmlFor="message">Mensaje</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  className="form-control"
-                />
+                <label>Message</label>
+                <textarea className="form-control" name="message" />
               </div>
-              <button type="submit" className="btnSendContact">
+
+              <button type="submit" className="btnSendContact" value="Send">
                 Enviar
               </button>
-            </form> */}
-            <form className="field" ref={form} onSubmit={sendEmail}>
-              <label>Name</label>
-              <input type="text" name="user_name" />
-              <label>Email</label>
-              <input type="email" name="user_email" />
-              <label>Message</label>
-              <textarea name="message" />
-              <input type="submit" value="Send" />
             </form>
           </div>
           <div className="col-md-6">
