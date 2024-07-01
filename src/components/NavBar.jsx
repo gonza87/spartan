@@ -26,7 +26,11 @@ function NavBar() {
             to={"/"}
             onClick={() => handleLinkClick("/")}
           >
-            <img className="logo" src="/img/logo.PNG" alt="logo" />
+            <img
+              className="logo animate__animated animate__flip animate__repeat-2"
+              src="/img/logo.PNG"
+              alt="logo"
+            />
             <span className="titleLogo">Spartan</span>
           </Link>
         </Navbar.Brand>
