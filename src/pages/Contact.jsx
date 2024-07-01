@@ -68,7 +68,7 @@ function Contact() {
           <div className="col-md-12">
             <form className="contact-form" ref={form} onSubmit={sendEmail}>
               <div className="form-group">
-                <label htmlFor="user_name">Name</label>
+                <label htmlFor="user_name">Nombre</label>
                 <input
                   className="form-control"
                   type="text"
@@ -86,7 +86,7 @@ function Contact() {
                 />
               </div>
               <div className="form-group">
-                <label htmlFor="message">Message</label>
+                <label htmlFor="message">Mensaje</label>
                 <textarea
                   className="form-control"
                   name="message"

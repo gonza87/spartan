@@ -274,7 +274,8 @@ font-size: 1.5rem;
 
 
 .contenedorDatos{
-  background-color: #000000;
+  margin-top: 50px;
+    background-color: rgb(10, 10, 9, 1);
   border-color: #7c0000;
   height: 400px;
   color: #F5EDED;
@@ -295,7 +296,8 @@ font-size: 1.5rem;
 }
 
 .contenedorHorarios{
-  background-color: #000000;
+  margin-top: 50px;
+    background-color: rgb(10, 10, 9, 1);
   height: 400px;
   color:#F5EDED ;
   text-align: center;
@@ -311,7 +313,7 @@ font-size: 1.5rem;
 }
 
 .contact-form {
-  max-width: 600px;
+  max-width: 500px;
   margin: 0 auto;
 }
 
