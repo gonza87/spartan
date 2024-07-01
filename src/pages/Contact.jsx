@@ -1,7 +1,7 @@
 import React from "react";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import { useState } from "react";
+
 import { VscSend } from "react-icons/vsc";
 import { IoCopyOutline } from "react-icons/io5";
 import { IoCallOutline } from "react-icons/io5";
@@ -14,14 +14,9 @@ function Contact() {
     e.preventDefault();
 
     emailjs
-      .sendForm(
-        "service_f4kb13mspartan",
-        "template_rlembvgspartan",
-        form.current,
-        {
-          publicKey: "m3I44tUotLmRmkF54",
-        }
-      )
+      .sendForm("service_d64lp8a", "template_ttgho2k", form.current, {
+        publicKey: "m3I44tUotLmRmkF54",
+      })
       .then(
         () => {
           console.log("SUCCESS!");
@@ -31,28 +26,6 @@ function Contact() {
         }
       );
   };
-  // const [formData, setFormData] = useState({
-  //   name: "",
-  //   email: "",
-  //   message: "",
-  // });
-
-  // const handleChange = (e) => {
-  //   const { name, value } = e.target;
-  //   setFormData({
-  //     ...formData,
-  //     [name]: value,
-  //   });
-  // };
-
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   // Aquí puedes manejar el envío del formulario
-  //   console.log(formData);
-  // };
-  // const email = "seguridad@gmail.com";
-  // const subject = "";
-  // const body = "";
 
   const handleSendEmail = () => {
     const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(
