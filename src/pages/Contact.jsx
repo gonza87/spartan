@@ -1,15 +1,21 @@
 import React from "react";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
-
+import { useInView } from "react-intersection-observer";
 import { VscSend } from "react-icons/vsc";
 import { IoCopyOutline } from "react-icons/io5";
 import { IoCallOutline } from "react-icons/io5";
 import { FaWhatsapp } from "react-icons/fa";
+import "animate.css";
 
 function Contact() {
   const form = useRef();
-
+  const { ref: card1Ref, inView: card1InView } = useInView({
+    triggerOnce: true,
+  });
+  const { ref: card2Ref, inView: card2InView } = useInView({
+    triggerOnce: true,
+  });
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -20,7 +26,7 @@ function Contact() {
       .then(
         () => {
           console.log("SUCCESS!");
-          form.current.reset(); 
+          form.current.reset();
         },
         (error) => {
           console.log("FAILED...", error.text);
@@ -101,7 +107,12 @@ function Contact() {
             </form>
           </div>
           <div className="col-md-6">
-            <div className="contenedorDatos">
+            <div
+              ref={card1Ref}
+              className={`contenedorDatos ${
+                card1InView ? "animate__animated animate__fadeInLeftBig" : ""
+              }`}
+            >
               <p className="titleDatos">Teléfono:</p>
               <div>
                 <p className="textoDatos">+598 00 00 00</p>
@@ -134,7 +145,14 @@ function Contact() {
             </div>
           </div>
           <div className="col-md-6">
-            <div className="contenedorHorarios">
+            <div
+              ref={card2Ref}
+              className={`contenedorHorarios ${
+                card2InView
+                  ? "animate__animated animate__fadeInUpBig animate__slow	2s"
+                  : ""
+              }`}
+            >
               <p className="titleDatos">Horario laboral:</p>
               <p className="textoDatos">Lunes 10:00 - 18:00</p>
               <p className="textoDatos">Martes 10:00 - 18:00</p>
