@@ -1,17 +1,31 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Dropdown from "react-bootstrap/Dropdown";
-import NavDropdown from "react-bootstrap/NavDropdown";
 
 function NavBar() {
+  const location = useLocation();
+  const [activeLink, setActiveLink] = useState(location.pathname);
+
+  useEffect(() => {
+    setActiveLink(location.pathname);
+  }, [location]);
+
+  const handleLinkClick = (path) => {
+    setActiveLink(path);
+  };
+
   return (
-    <Navbar expand="lg" className="nav ">
+    <Navbar expand="lg" className="nav">
       <Container>
         <Navbar.Brand className="menuNav">
-          <Link className="menuNav" to={"/"}>
+          <Link
+            className="menuNav"
+            to={"/"}
+            onClick={() => handleLinkClick("/")}
+          >
             <img className="logo" src="/img/logo.PNG" alt="logo" />
             <span className="titleLogo">Spartan</span>
           </Link>
@@ -19,7 +33,13 @@ function NavBar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Link className="menuNav" to={"/"}>
+            <Link
+              className={
+                activeLink === "/" ? "menuNavActived menuNav" : "menuNav"
+              }
+              to={"/"}
+              onClick={() => handleLinkClick("/")}
+            >
               Inicio
             </Link>
             <Dropdown>
@@ -30,29 +50,78 @@ function NavBar() {
               >
                 Servicios
               </Dropdown.Toggle>
-
               <Dropdown.Menu className="custom-dropdown-menu">
-                <Dropdown.Item className="menuNav" href="#/action-1">
+                <Dropdown.Item
+                  className={
+                    activeLink === "/service-1"
+                      ? "menuNavActived menuNav"
+                      : "menuNav"
+                  }
+                  href="/service-1"
+                  onClick={() => handleLinkClick("/service-1")}
+                >
                   Servicio 1
                 </Dropdown.Item>
-                <Dropdown.Item className="menuNav" href="#/action-1">
-                  Servicio 1
+                <Dropdown.Item
+                  className={
+                    activeLink === "/service-2"
+                      ? "menuNavActived menuNav"
+                      : "menuNav"
+                  }
+                  href="/service-2"
+                  onClick={() => handleLinkClick("/service-2")}
+                >
+                  Servicio 2
                 </Dropdown.Item>
-                <Dropdown.Item className="menuNav" href="#/action-1">
-                  Servicio 1
+                <Dropdown.Item
+                  className={
+                    activeLink === "/service-3"
+                      ? "menuNavActived menuNav"
+                      : "menuNav"
+                  }
+                  href="/service-3"
+                  onClick={() => handleLinkClick("/service-3")}
+                >
+                  Servicio 3
                 </Dropdown.Item>
-                <Dropdown.Item className="menuNav" href="#/action-1">
-                  Servicio 1
+                <Dropdown.Item
+                  className={
+                    activeLink === "/service-4"
+                      ? "menuNavActived menuNav"
+                      : "menuNav"
+                  }
+                  href="/service-4"
+                  onClick={() => handleLinkClick("/service-4")}
+                >
+                  Servicio 4
                 </Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
-            <Link className="menuNav" to={"/about"}>
+            <Link
+              className={
+                activeLink === "/about" ? "menuNavActived menuNav" : "menuNav"
+              }
+              to={"/about"}
+              onClick={() => handleLinkClick("/about")}
+            >
               Nosotros
             </Link>
-            <Link className="menuNav" to={"/work"}>
+            <Link
+              className={
+                activeLink === "/work" ? "menuNavActived menuNav" : "menuNav"
+              }
+              to={"/work"}
+              onClick={() => handleLinkClick("/work")}
+            >
               Trabaja con nosotros
             </Link>
-            <Link className="menuNav" to={"/contact"}>
+            <Link
+              className={
+                activeLink === "/contact" ? "menuNavActived menuNav" : "menuNav"
+              }
+              to={"/contact"}
+              onClick={() => handleLinkClick("/contact")}
+            >
               Contacto
             </Link>
           </Nav>

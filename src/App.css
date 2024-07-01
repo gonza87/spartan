@@ -24,6 +24,7 @@ body {
   background-color: #000000;
   z-index: 3;
 }
+
 .menuNav {
   color: #F5EDED !important;
   text-decoration: none;
@@ -33,6 +34,15 @@ body {
   font-size: 1.5rem;
 
 }
+
+.menuNavActived{
+  color: #D72323 !important;
+  text-decoration: none;
+  text-decoration: none;
+  border-style: none;
+  font-size: 1.5rem;
+}
+
 .nav .menuNav {
   font-family: "EB Garamond", serif;
   font-weight: 600;
@@ -73,6 +83,7 @@ body {
 }
 
 /****************************************************************************************************************************************/
+
 /*** Herosection ***/
 .hero-section {
   position: relative;
@@ -103,12 +114,7 @@ body {
   color: #fff; /* Color del texto sobre la imagen */
 }
 
-
-
-
-
-
- .titleHero{
+.titleHero{
   font-size: 4rem;
 }
 
@@ -137,6 +143,7 @@ body {
 }
 
 /****************************************************************************************************************************************/
+
 /*** Main ***/
 
 .main {
@@ -162,7 +169,6 @@ body {
   background: rgba(0, 0, 0, 0.8); /* Capa oscura para reducir el brillo */
   z-index: 1; /* Asegura que la capa esté por debajo del contenido */
 }
-
 
 .main-content {
 
@@ -197,12 +203,8 @@ font-size: 1.5rem;
   color: #D72323;
 }
 
-
-
-
-
-
 /****************************************************************************************************************************************/
+
 /*** Transicion Pages ***/
 
 .page-enter {
@@ -223,7 +225,6 @@ font-size: 1.5rem;
   transform: translateX(-100%);
   transition: opacity 300ms, transform 300ms;
 }
-
 
 /****************************************************************************************************************************************/
 
