@@ -68,20 +68,30 @@ function Contact() {
           <div className="col-md-12">
             <form className="contact-form" ref={form} onSubmit={sendEmail}>
               <div className="form-group">
-                <label>Name</label>
-                <input className="form-control" type="text" name="user_name" />
+                <label htmlFor="user_name">Name</label>
+                <input
+                  className="form-control"
+                  type="text"
+                  name="user_name "
+                  id="user_name"
+                />
               </div>
               <div className="form-group">
-                <label>Email</label>
+                <label htmlFor="user_email">Email</label>
                 <input
                   className="form-control"
                   type="email"
                   name="user_email"
+                  id="user_email"
                 />
               </div>
               <div className="form-group">
-                <label>Message</label>
-                <textarea className="form-control" name="message" />
+                <label htmlFor="message">Message</label>
+                <textarea
+                  className="form-control"
+                  name="message"
+                  id="message"
+                />
               </div>
 
               <button type="submit" className="btnSendContact" value="Send">
