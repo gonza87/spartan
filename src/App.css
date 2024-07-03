@@ -509,8 +509,9 @@ font-size: 1.5rem;
 .work-content {
   position: relative; /* Asegura que el texto esté por encima de la capa oscura */
   z-index: 2;
-  color: #fff; /* Color del texto sobre la imagen */
+  color: #ffffff; /* Color del texto sobre la imagen */
   font-size: 2rem;
+
 }
 
  .titleWork{

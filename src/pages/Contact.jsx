@@ -72,7 +72,7 @@ function Contact() {
       </div>
       <div className="container">
         <div className="row contact-content">
-          <div className="col-md-12">
+          <div className="col-md-12 mb-5">
             <form className="contact-form" ref={form} onSubmit={sendEmail}>
               <div className="form-group">
                 <label htmlFor="user_name">Nombre</label>

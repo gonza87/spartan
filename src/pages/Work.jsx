@@ -86,7 +86,6 @@ function Work() {
           <div className="col-12 mt-5 mb-5">
             <div className="col-md-12">
               <form
-                style={{ fontSize: "1.5rem" }}
                 className="contact-form"
                 ref={form}
                 onSubmit={sendEmail}
