@@ -83,9 +83,10 @@ function Work() {
             </p>
           </div>
 
-          <div className="col-12">
+          <div className="col-12 mt-5 mb-5">
             <div className="col-md-12">
               <form
+                style={{ fontSize: "1.5rem" }}
                 className="contact-form"
                 ref={form}
                 onSubmit={sendEmail}
@@ -94,6 +95,7 @@ function Work() {
                 <div className="form-group">
                   <label htmlFor="user_name">Nombre</label>
                   <input
+                    style={{ fontSize: "1.5rem" }}
                     className="form-control"
                     type="text"
                     name="user_name"
@@ -103,6 +105,7 @@ function Work() {
                 <div className="form-group">
                   <label htmlFor="user_email">Email</label>
                   <input
+                    style={{ fontSize: "1.5rem" }}
                     className="form-control"
                     type="email"
                     name="user_email"
@@ -112,6 +115,7 @@ function Work() {
                 <div className="form-group">
                   <label htmlFor="cv">Adjuntar CV</label>
                   <input
+                    style={{ fontSize: "1.5rem" }}
                     className="form-control"
                     type="file"
                     name="cv"
