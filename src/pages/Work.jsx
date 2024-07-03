@@ -60,7 +60,7 @@ function Work() {
         <div className="work-content container">
           <h2 className="titleWork mt-5">Trabaja con nosotros</h2>
           <p className="text-center">
-            Te damos la vienvenida a{" "}
+            Te damos la bienvenida a{" "}
             <span className="titleSparta">Spartan</span>
           </p>
         </div>
