@@ -81,6 +81,7 @@ function Contact() {
                   type="text"
                   name="user_name"
                   id="user_name"
+                  required
                 />
               </div>
               <div className="form-group">
@@ -90,6 +91,7 @@ function Contact() {
                   type="email"
                   name="user_email"
                   id="user_email"
+                  required
                 />
               </div>
               <div className="form-group">
@@ -98,6 +100,7 @@ function Contact() {
                   className="form-control"
                   name="message"
                   id="message"
+                  required
                 />
               </div>
 
