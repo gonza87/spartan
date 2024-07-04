@@ -68,7 +68,7 @@ function Work() {
       <div className="container">
         <div className="row work-content">
           <div className="col-12">
-            <h2 className="text-center">Nuesta cultura</h2>
+            <h2 className="titleCultura">Nuesta cultura</h2>
             <p>
               En <span className="titleSparta">Spartan</span>, creemos
               firmemente que nuestras personas son nuestro mayor recurso y la

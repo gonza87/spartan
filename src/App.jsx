@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Work from "./pages/Work";
+import About from "./pages/About";
 import Footer from "./components/Footer";
 import WhatsApp from "./components/WhatsApp";
 
@@ -30,6 +31,7 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/work" element={<Work />} />
+              <Route path="/about" element={<About />} />
             </Routes>
           </div>
         </CSSTransition>
