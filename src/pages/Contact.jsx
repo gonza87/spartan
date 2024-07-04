@@ -116,7 +116,9 @@ function Contact() {
             <div
               ref={card1Ref}
               className={`contenedorDatos ${
-                card1InView ? "animate__animated animate__fadeInLeftBig" : ""
+                card1InView
+                  ? "animate__animated animate__fadeInLeftBig animate__slow"
+                  : ""
               }`}
             >
               <p className="titleDatos">Teléfono:</p>
@@ -154,7 +156,9 @@ function Contact() {
             <div
               ref={card2Ref}
               className={`contenedorHorarios ${
-                card2InView ? "animate__animated animate__fadeInUpBig" : ""
+                card2InView
+                  ? "animate__animated animate__fadeInUpBig animate__slow"
+                  : ""
               }`}
             >
               <p className="titleDatos">Horario laboral:</p>

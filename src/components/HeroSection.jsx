@@ -3,12 +3,6 @@ import React from "react";
 function HeroSection() {
   return (
     <div className="hero-section">
-      {/* <img
-        src=".././img/spartan02.jpg"
-        alt="Background"
-        className="hero-background"
-      /> */}
-      {/* <div className="hero-gradient"></div> */}
       <div className="hero-content container">
         <div className="row">
           <div className="col-md-7">
