@@ -29,14 +29,14 @@ function About() {
       </div>
       <div className="container mt-5">
         <div className="row about-content">
-          <div className="col-lg-6">
+          <div className="col-12 col-lg-6">
             <div className="row">
               <div className="col-12">
                 <div
                   ref={card1Ref}
                   className={`contQuienes ${
                     card1InView
-                      ? "animate__animated animate__fadeInRightBig animate__slow"
+                      ? "animate__animated animate__fadeInRight animate__slow"
                       : ""
                   }`}
                 >
@@ -55,7 +55,7 @@ function About() {
                   ref={card2Ref}
                   className={`contQuienes ${
                     card2InView
-                      ? "animate__animated animate__fadeInDownBig animate__slow"
+                      ? "animate__animated animate__fadeInDown animate__slow"
                       : ""
                   }`}
                 >
@@ -73,12 +73,12 @@ function About() {
               </div>
             </div>
           </div>
-          <div className="col-lg-6">
+          <div className="col-12 col-lg-6">
             <div
               ref={card3Ref}
               className={`contQuienes ${
                 card3InView
-                  ? "animate__animated animate__fadeInDownBig animate__slow"
+                  ? "animate__animated animate__fadeInDown animate__slow"
                   : ""
               }`}
             >
@@ -118,12 +118,12 @@ function About() {
               </ul>
             </div>
           </div>
-          <div className="col-lg-6">
+          <div className="col-12 col-lg-6">
             <div
               ref={card4Ref}
               className={`contQuienes ${
                 card4InView
-                  ? "animate__animated animate__fadeInRightBig animate__slow"
+                  ? "animate__animated animate__fadeInRight animate__slow"
                   : ""
               }`}
             >
@@ -145,12 +145,12 @@ function About() {
               </ul>
             </div>
           </div>
-          <div className="col-lg-6">
+          <div className="col-12 col-lg-6">
             <div
               ref={card5Ref}
               className={`contQuienes ${
                 card5InView
-                  ? "animate__animated animate__fadeInLeftBig animate__slow"
+                  ? "animate__animated animate__fadeInLeft animate__slow"
                   : ""
               }`}
             >
