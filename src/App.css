@@ -540,6 +540,46 @@ font-size: 1.5rem;
 /****************************************************************************************************************************************/
 
 /*** About ***/
+.hero-about {
+  position: relative;
+  height: 60vh; /* Ajusta según tus necesidades */
+  display: flex;
+  align-items: center;
+  background-image: url(".././img/spartan11.jpg");
+  background-size: cover;
+  overflow: hidden; /* Asegura que el contenido dentro no se desborde */
+  box-shadow: inset 0 0 14px 16px rgba(7, 8, 8, 1);
+  background-position: center 10%;
+}
+
+.hero-about::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); /* Capa oscura para reducir el brillo */
+  z-index: 1; /* Asegura que la capa esté por debajo del contenido */
+}
+
+.about-content {
+  position: relative; /* Asegura que el texto esté por encima de la capa oscura */
+  z-index: 2;
+  color: #fff; /* Color del texto sobre la imagen */
+  font-size: 1.5rem;
+}
+
+.titleAbout{
+  font-size: 4rem;
+  color: #F5EDED;
+  text-align: center;
+  
+} 
+.titleQuienes{
+  text-align: center;
+  font-size: 3rem;
+}
 
 
 
