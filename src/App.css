@@ -7,7 +7,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "EB Garamond", serif;
-  font-weight: 600;
+  /* font-weight: 600; */
   
 }
 body {
@@ -567,7 +567,7 @@ font-size: 1.5rem;
   position: relative; /* Asegura que el texto esté por encima de la capa oscura */
   z-index: 2;
   color: #fff; /* Color del texto sobre la imagen */
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 }
 
 .titleAbout{
@@ -578,12 +578,13 @@ font-size: 1.5rem;
 } 
 .titleQuienes{
   text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
+  color: #D72323;
 }
 
 .contQuienes{
   /* max-width: 750px; */
-  min-height: 406px;
+  min-height: 312px;
   margin-top: 23px;
   background: rgb(0,0,0);
   background: radial-gradient(circle, rgba(0,0,0,1) 58%, rgba(48,0,0,1) 86%, rgba(0,0,0,1) 100%, rgba(124,0,0,1) 100%);
