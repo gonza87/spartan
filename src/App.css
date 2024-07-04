@@ -583,7 +583,7 @@ font-size: 1.5rem;
 
 .contQuienes{
   /* max-width: 750px; */
-  min-height: 420px;
+  min-height: 406px;
   margin-top: 23px;
   background: rgb(0,0,0);
   background: radial-gradient(circle, rgba(0,0,0,1) 58%, rgba(48,0,0,1) 86%, rgba(0,0,0,1) 100%, rgba(124,0,0,1) 100%);
