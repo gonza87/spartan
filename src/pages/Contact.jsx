@@ -6,6 +6,7 @@ import { VscSend } from "react-icons/vsc";
 import { IoCopyOutline } from "react-icons/io5";
 import { IoCallOutline } from "react-icons/io5";
 import { FaWhatsapp } from "react-icons/fa";
+import Swal from "sweetalert2";
 import "animate.css";
 
 function Contact() {
@@ -26,6 +27,21 @@ function Contact() {
       .then(
         () => {
           console.log("SUCCESS!");
+          const Toast = Swal.mixin({
+            toast: true,
+            position: "center",
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+              toast.onmouseenter = Swal.stopTimer;
+              toast.onmouseleave = Swal.resumeTimer;
+            },
+          });
+          Toast.fire({
+            icon: "success",
+            title: "Enviado corréctamente",
+          });
           form.current.reset();
         },
         (error) => {

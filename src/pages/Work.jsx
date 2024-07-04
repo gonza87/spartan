@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { storage } from ".././firebase/firebaseConfig";
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
+import Swal from "sweetalert2";
 
 function Work() {
   const form = useRef();
@@ -43,6 +44,21 @@ function Work() {
         .then(
           () => {
             console.log("SUCCESS!");
+            const Toast = Swal.mixin({
+              toast: true,
+              position: "center",
+              showConfirmButton: false,
+              timer: 3000,
+              timerProgressBar: true,
+              didOpen: (toast) => {
+                toast.onmouseenter = Swal.stopTimer;
+                toast.onmouseleave = Swal.resumeTimer;
+              },
+            });
+            Toast.fire({
+              icon: "success",
+              title: "Enviado corréctamente",
+            });
             form.current.reset();
           },
           (error) => {
@@ -99,6 +115,7 @@ function Work() {
                     type="text"
                     name="user_name"
                     id="user_name"
+                    required
                   />
                 </div>
                 <div className="form-group">
@@ -109,6 +126,7 @@ function Work() {
                     type="email"
                     name="user_email"
                     id="user_email"
+                    required
                   />
                 </div>
                 <div className="form-group">
@@ -119,6 +137,7 @@ function Work() {
                     type="file"
                     name="cv"
                     id="cv"
+                    required
                   />
                 </div>
                 <div className="form-group">
@@ -127,6 +146,7 @@ function Work() {
                     className="form-control"
                     name="message"
                     id="message"
+                    required
                   />
                 </div>
 
