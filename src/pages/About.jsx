@@ -1,6 +1,25 @@
 import React from "react";
+import { useRef } from "react";
+import { useInView } from "react-intersection-observer";
+import "animate.css";
 
 function About() {
+  const form = useRef();
+  const { ref: card1Ref, inView: card1InView } = useInView({
+    triggerOnce: true,
+  });
+  const { ref: card2Ref, inView: card2InView } = useInView({
+    triggerOnce: true,
+  });
+  const { ref: card3Ref, inView: card3InView } = useInView({
+    triggerOnce: true,
+  });
+  const { ref: card4Ref, inView: card4InView } = useInView({
+    triggerOnce: true,
+  });
+  const { ref: card5Ref, inView: card5InView } = useInView({
+    triggerOnce: true,
+  });
   return (
     <>
       <div className="hero-about">
@@ -13,7 +32,14 @@ function About() {
           <div className="col-lg-6">
             <div className="row">
               <div className="col-12">
-                <div className="contQuienes">
+                <div
+                  ref={card1Ref}
+                  className={`contQuienes ${
+                    card1InView
+                      ? "animate__animated animate__fadeInRightBig animate__slow"
+                      : ""
+                  }`}
+                >
                   <h2 className="titleQuienes">¿Quiénes Somos?</h2>
                   <p>
                     <span className="titleSparta">Spartan</span> Seguridad es
@@ -25,7 +51,14 @@ function About() {
                 </div>
               </div>
               <div className="col-12">
-                <div className="contQuienes">
+                <div
+                  ref={card2Ref}
+                  className={`contQuienes ${
+                    card2InView
+                      ? "animate__animated animate__fadeInDownBig animate__slow"
+                      : ""
+                  }`}
+                >
                   <h2 className="titleQuienes">
                     Nuestro Equipo de Capacitación
                   </h2>
@@ -41,7 +74,14 @@ function About() {
             </div>
           </div>
           <div className="col-lg-6">
-            <div className="contQuienes">
+            <div
+              ref={card3Ref}
+              className={`contQuienes ${
+                card3InView
+                  ? "animate__animated animate__fadeInDownBig animate__slow"
+                  : ""
+              }`}
+            >
               <h2 className="titleQuienes">Áreas de Capacitación</h2>
               <p>
                 1. Capacitación ante el Delito y Procedimientos de Actuación
@@ -79,7 +119,14 @@ function About() {
             </div>
           </div>
           <div className="col-lg-6">
-            <div className="contQuienes">
+            <div
+              ref={card4Ref}
+              className={`contQuienes ${
+                card4InView
+                  ? "animate__animated animate__fadeInRightBig animate__slow"
+                  : ""
+              }`}
+            >
               <h2 className="titleQuienes">Nuestros Valores Fundamentales</h2>
               <ul>
                 <li>
@@ -99,7 +146,14 @@ function About() {
             </div>
           </div>
           <div className="col-lg-6">
-            <div className="contQuienes">
+            <div
+              ref={card5Ref}
+              className={`contQuienes ${
+                card5InView
+                  ? "animate__animated animate__fadeInLeftBig animate__slow"
+                  : ""
+              }`}
+            >
               <h2 className="titleQuienes">Opciones de Contratación</h2>
               <p>
                 En <span className="titleSparta">Spartan</span> Seguridad,
