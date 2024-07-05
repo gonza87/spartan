@@ -83,20 +83,23 @@ function Work() {
       </div>
       <div className="container">
         <div className="row work-content">
-          <div className="col-12">
-            <h2 className="titleCultura">Nuesta cultura</h2>
-            <p>
-              En <span className="titleSparta">Spartan</span>, creemos
-              firmemente que nuestras personas son nuestro mayor recurso y la
-              clave de nuestro éxito. Nuestro equipo está compuesto por
-              profesionales dedicados y apasionados por la seguridad, y estamos
-              siempre en la búsqueda de personas talentosas que compartan
-              nuestro compromiso con la excelencia. Nos enorgullecemos de crear
-              un entorno de trabajo donde cada miembro del equipo se siente
-              valorado y respetado. Fomentamos una cultura de inclusión,
-              colaboración y crecimiento profesional, donde cada persona tiene
-              la oportunidad de desarrollarse y alcanzar su máximo potencial.
-            </p>
+          <div className="col-12 d-flex justify-content-center">
+            <div className="contNuestraCultura">
+              <h2 className="titleCultura">Nuesta cultura</h2>
+              <p>
+                En <span className="titleSparta">Spartan</span>, creemos
+                firmemente que nuestras personas son nuestro mayor recurso y la
+                clave de nuestro éxito. Nuestro equipo está compuesto por
+                profesionales dedicados y apasionados por la seguridad, y
+                estamos siempre en la búsqueda de personas talentosas que
+                compartan nuestro compromiso con la excelencia. Nos
+                enorgullecemos de crear un entorno de trabajo donde cada miembro
+                del equipo se siente valorado y respetado. Fomentamos una
+                cultura de inclusión, colaboración y crecimiento profesional,
+                donde cada persona tiene la oportunidad de desarrollarse y
+                alcanzar su máximo potencial.
+              </p>
+            </div>
           </div>
 
           <div className="col-12 mt-5 mb-5">
@@ -107,6 +110,9 @@ function Work() {
                 onSubmit={sendEmail}
                 encType="multipart/form-data"
               >
+                <h3 className="titleFormWork">
+                  Aplicar a <span className="titleSparta">Spartan</span>
+                </h3>
                 <div className="form-group">
                   <label htmlFor="user_name">Nombre</label>
                   <input
@@ -143,6 +149,7 @@ function Work() {
                 <div className="form-group">
                   <label htmlFor="message">Mensaje</label>
                   <textarea
+                    style={{ height: "200px" }}
                     className="form-control"
                     name="message"
                     id="message"
@@ -151,7 +158,7 @@ function Work() {
                 </div>
 
                 <button type="submit" className="btnSendContact" value="Send">
-                  Enviar
+                  Enviar Mensaje
                 </button>
               </form>
             </div>

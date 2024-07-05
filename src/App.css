@@ -319,11 +319,16 @@ font-size: 1.5rem;
 }
 
 .contact-form {
-  max-width: 500px;
+  max-width: 700px;
   margin: 0 auto;
 }
 
-
+.titleFormContact{
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 1.5rem;
+  font-weight: normal;
+}
 
 .form-group {
   margin-bottom: 1rem;
@@ -342,6 +347,8 @@ font-size: 1.5rem;
   transition: border-color 0.3s;
 
 }
+
+
 
 .form-control:focus {
   border-color: #D72323;
@@ -526,9 +533,23 @@ font-size: 1.5rem;
   text-align: center;
   
 } 
+.contNuestraCultura{
+  max-width: 700px;
+
+  font-size: 1.3rem;
+}
 .titleCultura{
+  margin-top: 40px;
+    text-align: center;
+    font-size: 2rem;
+    color: #D72323;
+
+}
+.titleFormWork{
+  font-size: 2rem;
+  color:#D72323;
+  margin-bottom: 20px;
   text-align: center;
-  font-size: 3rem;
 }
 .titleSparta{
   font-family: "Cinzel", serif;

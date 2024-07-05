@@ -90,6 +90,10 @@ function Contact() {
         <div className="row contact-content">
           <div className="col-md-12 mb-5">
             <form className="contact-form" ref={form} onSubmit={sendEmail}>
+              <h2 className="titleFormContact">
+                Si deseas más información, puedes ponerte en contacto con
+                nosotros a través del siguiente formulario.
+              </h2>
               <div className="form-group">
                 <label htmlFor="user_name">Nombre</label>
                 <input
@@ -115,7 +119,7 @@ function Contact() {
               <div className="form-group">
                 <label htmlFor="message">Mensaje</label>
                 <textarea
-                  style={{ fontSize: "1.5rem" }}
+                  style={{ height: "200px" }}
                   className="form-control"
                   name="message"
                   id="message"
@@ -124,7 +128,7 @@ function Contact() {
               </div>
 
               <button type="submit" className="btnSendContact" value="Send">
-                Enviar
+                Enviar Mensaje
               </button>
             </form>
           </div>
