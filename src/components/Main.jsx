@@ -26,7 +26,7 @@ function Main() {
   return (
     <div className="main">
       <div className="main-content container">
-        <div className="conntIntroduccion">
+        <div className="conntIntroduccion animate__animated animate__fadeInLeftBig animate__slow">
           <p>
             Spartan Seguridad se enorgullece de ofrecer servicios de protección
             y atención de la más alta calidad, respaldados por un equipo experto
