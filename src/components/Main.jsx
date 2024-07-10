@@ -26,6 +26,14 @@ function Main() {
   return (
     <div className="main">
       <div className="main-content container">
+        <div className="conntIntroduccion">
+          <p>
+            Spartan Seguridad se enorgullece de ofrecer servicios de protección
+            y atención de la más alta calidad, respaldados por un equipo experto
+            y dedicado. Nos comprometemos a garantizar su seguridad con
+            responsabilidad, seriedad y una atención al cliente inigualable.
+          </p>
+        </div>
         <h2 className="titleServices">Nuestros Servicios</h2>
         <div className="contServices">
           <div

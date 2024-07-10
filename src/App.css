@@ -174,10 +174,20 @@ body {
 
   z-index: 2;
   color: #F5EDED; /* Asegúrate de que el texto sea visible */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   
 
 }
-
+.conntIntroduccion{
+  max-width: 700px;
+margin-bottom: 40px;
+}
+.conntIntroduccion p{
+  font-size: 1.3rem;
+}
 .titleServices{
   margin-top: 5px;
   text-align: center;
