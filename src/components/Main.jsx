@@ -28,10 +28,11 @@ function Main() {
       <div className="main-content container">
         <div className="conntIntroduccion animate__animated animate__fadeInLeftBig animate__slow">
           <p>
-            Spartan Seguridad se enorgullece de ofrecer servicios de protección
-            y atención de la más alta calidad, respaldados por un equipo experto
-            y dedicado. Nos comprometemos a garantizar su seguridad con
-            responsabilidad, seriedad y una atención al cliente inigualable.
+            <span className="titleSparta">Spartan</span> Seguridad se
+            enorgullece de ofrecer servicios de protección y atención de la más
+            alta calidad, respaldados por un equipo experto y dedicado. Nos
+            comprometemos a garantizar su seguridad con responsabilidad,
+            seriedad y una atención al cliente inigualable.
           </p>
         </div>
         <h2 className="titleServices">Nuestros Servicios</h2>
