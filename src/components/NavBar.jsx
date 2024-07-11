@@ -6,6 +6,8 @@ import Navbar from "react-bootstrap/Navbar";
 import Dropdown from "react-bootstrap/Dropdown";
 
 function NavBar() {
+  const [expanded, setExpanded] = useState(false);
+  const handleNavClose = () => setExpanded(false);
   const location = useLocation();
   const [activeLink, setActiveLink] = useState(location.pathname);
 
@@ -15,10 +17,16 @@ function NavBar() {
 
   const handleLinkClick = (path) => {
     setActiveLink(path);
+    handleNavClose(); // Close the navbar when a link is clicked
   };
 
   return (
-    <Navbar expand="lg" className="nav">
+    <Navbar
+      expand="lg"
+      expanded={expanded}
+      onToggle={setExpanded}
+      className="nav"
+    >
       <Container>
         <Navbar.Brand className="menuNav">
           <Link
