@@ -4,7 +4,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Dropdown from "react-bootstrap/Dropdown";
-
+import { CgMenuLeft } from "react-icons/cg";
 function NavBar() {
   const [expanded, setExpanded] = useState(false);
   const handleNavClose = () => setExpanded(false);
@@ -42,7 +42,9 @@ function NavBar() {
             <span className="titleLogo">Spartan</span>
           </Link>
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle aria-controls="basic-navbar-nav">
+          <CgMenuLeft style={{ color: "#D72323" }} />
+        </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <Link
