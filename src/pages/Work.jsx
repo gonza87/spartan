@@ -130,9 +130,11 @@ function Work() {
                   <input
                     style={{ fontSize: "1.5rem" }}
                     className="form-control"
-                    type="number"
+                    type="tel"
                     name="user_telephone"
                     id="user_telephone"
+                    pattern="^\+?[0-9\s\-\(\)]+$"
+                    title="Por favor, ingresa un número de teléfono válido"
                     required
                   />
                 </div>
@@ -161,7 +163,7 @@ function Work() {
                 <div className="form-group">
                   <label htmlFor="message">Mensaje</label>
                   <textarea
-                    style={{ height: "200px" }}
+                    style={{ height: "200px", fontSize: "1.5rem" }}
                     className="form-control"
                     name="message"
                     id="message"
