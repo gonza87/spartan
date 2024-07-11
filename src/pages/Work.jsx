@@ -27,6 +27,7 @@ function Work() {
       // Crear un objeto a partir del FormData
       const emailData = {
         user_name: formData.get("user_name"),
+        user_telephone: formData.get("user_telephone"),
         user_email: formData.get("user_email"),
         message: formData.get("message"),
         cv_url: uploadedCvUrl, // Añadir el URL del CV aquí
@@ -121,6 +122,17 @@ function Work() {
                     type="text"
                     name="user_name"
                     id="user_name"
+                    required
+                  />
+                </div>
+                <div className="form-group">
+                  <label htmlFor="user_telephone">Teléfono</label>
+                  <input
+                    style={{ fontSize: "1.5rem" }}
+                    className="form-control"
+                    type="number"
+                    name="user_telephone"
+                    id="user_telephone"
                     required
                   />
                 </div>

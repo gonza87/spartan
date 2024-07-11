@@ -106,6 +106,17 @@ function Contact() {
                 />
               </div>
               <div className="form-group">
+                <label htmlFor="user_telephone">Teléfono</label>
+                <input
+                  style={{ fontSize: "1.5rem" }}
+                  className="form-control"
+                  type="number"
+                  name="user_telephone"
+                  id="user_telephone"
+                  required
+                />
+              </div>
+              <div className="form-group">
                 <label htmlFor="user_email">Email</label>
                 <input
                   style={{ fontSize: "1.5rem" }}
