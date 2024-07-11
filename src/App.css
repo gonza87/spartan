@@ -272,6 +272,7 @@ font-size: 1.5rem;
   z-index: 2;
   color: #fff; 
   font-size: 1.5rem;
+  font-weight: 600;
 }
 
 .titleContact{
@@ -295,7 +296,7 @@ font-size: 1.5rem;
 
 .contenedorDatos{
   margin-top: 50px;
-    background-color: rgb(10, 10, 9, 1);
+    /* background-color: rgb(10, 10, 9, 1); */
   border-color: #7c0000;
   height: 400px;
   color: #F5EDED;
@@ -312,7 +313,9 @@ font-size: 1.5rem;
 }
 
 .textoDatos{
-  font-size: 1.2rem;
+  
+  font-size: 1.5rem;
+  font-weight: normal;
 }
 
 .contenedorHorarios{
@@ -376,6 +379,7 @@ font-size: 1.5rem;
   border-radius: 10px;
   padding: 5px 15px;
   transition: transform 0.5s ease;
+  font-weight: 600;
   
 }
 

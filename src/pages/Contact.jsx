@@ -88,7 +88,51 @@ function Contact() {
       </div>
       <div className="container">
         <div className="row contact-content">
-          <div className="col-md-12 mb-5">
+          <div className="col-md-4 mt-5">
+            <div
+              ref={card1Ref}
+              className={`contenedorDatos ${
+                card1InView ? "animate__animated animate__fadeInLeftBig" : ""
+              }`}
+            >
+              <div>
+                <p className="titleDatos">Teléfono:</p>
+                <p className="textoDatos">+598 00 00 00</p>
+                <IoCallOutline
+                  size={20}
+                  className="btnDatos"
+                  onClick={handleCall}
+                />
+                <FaWhatsapp
+                  size={20}
+                  className="ms-3 btnDatos"
+                  onClick={handleWhatsappClick}
+                />
+              </div>
+
+              <div className="mt-4">
+                <p className="titleDatos">Email:</p>
+                <p className="textoDatos"> seguridad@gmail.com</p>
+                <VscSend
+                  className="btnDatos"
+                  size={20}
+                  onClick={handleSendEmail}
+                />
+                <IoCopyOutline
+                  className="ms-3 btnDatos"
+                  size={20}
+                  onClick={handleCopyEmail}
+                />
+              </div>
+
+              <div className="mt-4">
+                <p className="titleDatos">Horario de atención al cliente:</p>
+                <p className="textoDatos"> Lu a vier de 9 a 18 hrs</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-md-8 mb-5">
             <form className="contact-form" ref={form} onSubmit={sendEmail}>
               <h2 className="titleFormContact">
                 Si deseas más información, puedes ponerte en contacto con
@@ -143,47 +187,8 @@ function Contact() {
               </button>
             </form>
           </div>
-          <div className="col-md-6">
-            <div
-              ref={card1Ref}
-              className={`contenedorDatos ${
-                card1InView
-                  ? "animate__animated animate__fadeInLeftBig animate__slow"
-                  : ""
-              }`}
-            >
-              <p className="titleDatos">Teléfono:</p>
-              <div>
-                <p className="textoDatos">+598 00 00 00</p>
-                <IoCallOutline
-                  size={20}
-                  className="btnDatos"
-                  onClick={handleCall}
-                />
-                <FaWhatsapp
-                  size={20}
-                  className="ms-3 btnDatos"
-                  onClick={handleWhatsappClick}
-                />
-              </div>
 
-              <p className="titleDatos">Email:</p>
-              <div>
-                <p className="textoDatos"> seguridad@gmail.com</p>
-                <VscSend
-                  className="btnDatos"
-                  size={20}
-                  onClick={handleSendEmail}
-                />
-                <IoCopyOutline
-                  className="ms-3 btnDatos"
-                  size={20}
-                  onClick={handleCopyEmail}
-                />
-              </div>
-            </div>
-          </div>
-          <div className="col-md-6">
+          {/* <div className="col-md-6">
             <div
               ref={card2Ref}
               className={`contenedorHorarios ${
@@ -199,7 +204,7 @@ function Contact() {
               <p className="textoDatos">Jueves 10:00 - 18:00</p>
               <p className="textoDatos">Viernes 10:00 - 18:00</p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </>
