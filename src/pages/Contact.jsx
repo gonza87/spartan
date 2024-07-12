@@ -49,6 +49,9 @@ function Contact() {
         }
       );
   };
+  const email = "email@gmail.com";
+  const subject = "";
+  const body = "";
 
   const handleSendEmail = () => {
     const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(
