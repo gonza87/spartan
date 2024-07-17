@@ -8,6 +8,7 @@ import Work from "./pages/Work";
 import About from "./pages/About";
 import Footer from "./components/Footer";
 import WhatsApp from "./components/WhatsApp";
+import ServicePorteria from "./pages/ServicePorteria";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
@@ -32,6 +33,7 @@ function App() {
               <Route path="/contact" element={<Contact />} />
               <Route path="/work" element={<Work />} />
               <Route path="/about" element={<About />} />
+              <Route path="/porteria" element={<ServicePorteria />} />
             </Routes>
           </div>
         </CSSTransition>

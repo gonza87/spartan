@@ -639,3 +639,42 @@ font-weight: normal;
 
 /****************************************************************************************************************************************/
 
+/*** Porteria Page ***/
+
+.hero-porteria {
+  position: relative;
+  height: 60vh; 
+  display: flex;
+  align-items: center;
+  background-image: url(".././img/gate.jpg");
+  background-size: cover;
+  overflow: hidden; 
+  box-shadow: inset 0 0 14px 16px rgba(7, 8, 8, 1);
+  background-position: center 40%;
+}
+
+.hero-porteria::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); 
+  z-index: 1; 
+}
+
+.porteria-content {
+  position: relative; 
+  z-index: 2;
+  color: #fff; 
+  font-size: 1.3rem;
+  font-weight: normal;
+}
+
+.titlePorteria{
+  font-size: 4rem;
+  color: #F5EDED;
+  text-align: center;
+  
+} 
