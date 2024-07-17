@@ -735,3 +735,56 @@ font-weight: normal;
   text-align: center;
   
 } 
+
+/****************************************************************************************************************************************/
+
+/*** Seguridad y vigilancia Page ***/
+.hero-seguridadVigilancia {
+  position: relative;
+  height: 60vh; 
+  display: flex;
+  align-items: center;
+  background-image: url(".././img/seguridadvigilancia.jpg");
+  background-size: cover;
+  overflow: hidden; 
+  box-shadow: inset 0 0 14px 16px rgba(7, 8, 8, 1);
+  background-position: center 40%;
+}
+
+.hero-seguridadVigilancia::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); 
+  z-index: 1; 
+}
+
+.seguridadVigilancia-content {
+  position: relative; 
+  z-index: 2;
+  color: #fff; 
+  font-size: 1.3rem;
+  font-weight: normal;
+}
+
+.titleseguridadVigilancia{
+  font-size: 4rem;
+  color: #F5EDED;
+  text-align: center;
+  
+} 
+
+.custom-img-size {
+  max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  max-height: 500px; /* Ajusta este valor según el tamaño máximo deseado */
+  margin-bottom: 50px;
+}
+
+.contImgVigilancia {
+  text-align: center; /* Centra la imagen horizontalmente */
+   /* Espaciado superior e inferior */
+}
