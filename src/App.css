@@ -689,11 +689,16 @@ font-weight: normal;
   text-align: center;
   
 } 
-
-.textPorteria{
+.imgPorteria{
+  max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  max-height: 400px; /* Ajusta este valor según el tamaño máximo deseado */
+  margin-bottom: 50px;
+}
+/* .textPorteria{
    max-width: 750px; 
   margin-top: 23px; 
-}
+} */
 
 /****************************************************************************************************************************************/
 
@@ -780,7 +785,7 @@ font-weight: normal;
 .custom-img-size {
   max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
   height: auto; /* Mantiene la proporción de la imagen */
-  max-height: 500px; /* Ajusta este valor según el tamaño máximo deseado */
+  max-height: 400px; /* Ajusta este valor según el tamaño máximo deseado */
   margin-bottom: 50px;
 }
 

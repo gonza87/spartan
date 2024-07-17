@@ -6,18 +6,22 @@ function ServicePorteria() {
       <div className="hero-porteria">
         <div className="porteria-content container">
           <h2 className="titlePorteria mt-5">Portería</h2>
-          {/* <p>
-            En Spartan Seguridad, entendemos la importancia de contar con un
-            servicio de portería profesional y confiable. Nuestro equipo de
-            porteros está capacitado para proporcionar un entorno seguro y
-            ordenado en cualquier tipo de instalación, ya sea residencial,
-            comercial o industrial.
-          </p> */}
         </div>
       </div>
       <div className="container">
         <div className="row porteria-content">
-          <div className="col-12 col-lg-12 d-flex justify-content-center">
+          <div className="col-12 col-lg-6 d-flex justify-content-center">
+            <div className="">
+              <div>
+                <img
+                  src="../.././img/porteria04.jpg"
+                  alt=""
+                  className="img-fluid imgPorteria"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="col-12 col-lg-6 d-flex justify-content-center">
             <div className="textPorteria ">
               <p>
                 El personal de portería se caracteriza por su excelente
