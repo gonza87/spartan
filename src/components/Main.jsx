@@ -91,9 +91,13 @@ function Main() {
       <div className="main-content container">
         <h2 className="text-center titleTestimonos">Testimonios</h2>
         <TestimonialsCarousel />
-        <div>
+        <div className="text-center">
           <h2 className="text-center titleCertificaciones">Certificaciones</h2>
-          <p className="text-center">LOGO</p>
+          <img
+            src=".././img/certificado.jpg"
+            alt="certificado"
+            className="imgCertificado"
+          />
         </div>
       </div>
     </div>
