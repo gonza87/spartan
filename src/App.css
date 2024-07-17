@@ -188,7 +188,7 @@ body {
 .conntIntroduccion{
   max-width: 700px;
   margin-top: 40px;
-margin-bottom: 200px;
+margin-bottom: 150px;
 }
 .conntIntroduccion p{
   font-size: 1.3rem;
@@ -225,6 +225,10 @@ width: 160px;
   color: #D72323;
 }
 
+.titleCertificaciones{
+  
+  font-size:  3rem;
+}
 /****************************************************************************************************************************************/
 
 /*** Transicion Pages ***/
@@ -440,7 +444,7 @@ width: 160px;
 /*** Testimonials ***/
 
 .titleTestimonos{
-  margin-top: 200px;
+  margin-top: 150px;
   font-size:  3rem;
 }
 
@@ -452,7 +456,7 @@ width: 160px;
   width: 80%;
   margin: auto;
   padding: 10px;
-  margin-bottom: 500px;
+  margin-bottom: 150px;
 }
 
 
