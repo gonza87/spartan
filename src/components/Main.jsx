@@ -94,6 +94,11 @@ function Main() {
         <div className="text-center">
           <h2 className="text-center titleCertificaciones">Certificaciones</h2>
           <img
+            src=".././img/ministerio.jpg"
+            alt="certificado"
+            className="imgCertificado me-4"
+          />
+          <img
             src=".././img/certificado.jpg"
             alt="certificado"
             className="imgCertificado"
