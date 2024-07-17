@@ -41,9 +41,7 @@ function Main() {
           <div
             ref={card1Ref}
             className={`text-center cardService ${
-              card1InView
-                ? "animate__animated animate__fadeInLeftBig animate__slow"
-                : ""
+              card1InView ? "animate__animated animate__fadeInLeftBig" : ""
             }`}
           >
             <GiSwordwoman color="#D72323" size="6em" />
@@ -67,9 +65,7 @@ function Main() {
           <div
             ref={card3Ref}
             className={`text-center cardService ${
-              card3InView
-                ? "animate__animated animate__fadeInUpBig animate__slow"
-                : ""
+              card3InView ? "animate__animated animate__fadeInUpBig" : ""
             }`}
           >
             <GiSwordWound color="#D72323" size="6em" />
