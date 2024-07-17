@@ -12,6 +12,7 @@ import WhatsApp from "./components/WhatsApp";
 import ServicePorteria from "./pages/ServicePorteria";
 import ServiceLimpiezaObra from "./pages/ServiceLimpiezaObra";
 import ServiceSeguridadVigilancia from "./pages/ServiceSeguridadVigilancia";
+import ServiceLimpiezaMantenimiento from "./pages/ServiceLimpiezaMantenimiento";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
@@ -41,6 +42,10 @@ function App() {
               <Route
                 path="/seguridadyvigilancia"
                 element={<ServiceSeguridadVigilancia />}
+              />
+              <Route
+                path="/limpiezamantenimiento"
+                element={<ServiceLimpiezaMantenimiento />}
               />
             </Routes>
           </div>

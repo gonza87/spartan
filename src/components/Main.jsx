@@ -70,8 +70,10 @@ function Main() {
               card3InView ? "animate__animated animate__fadeInUpBig" : ""
             }`}
           >
-            <GiSwordWound color="#D72323" size="6em" />
-            <p>Limpieza y mantenimiento</p>
+            <Link to={"/limpiezamantenimiento"}>
+              <GiSwordWound color="#D72323" size="6em" />
+              <p>Limpieza y mantenimiento</p>
+            </Link>
           </div>
           <div
             ref={card4Ref}
