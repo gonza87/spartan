@@ -67,14 +67,15 @@ function NavBar() {
               <Dropdown.Menu className="custom-dropdown-menu">
                 <Dropdown.Item
                   className={
-                    activeLink === "/service-1"
+                    activeLink === "/seguridadyvigilancia"
                       ? "menuNavActived menuNav"
                       : "menuNav"
                   }
-                  href="/service-1"
-                  onClick={() => handleLinkClick("/service-1")}
+                  as={Link}
+                  to="/seguridadyvigilancia"
+                  onClick={() => handleLinkClick("/seguridadyvigilancia")}
                 >
-                  Servicio 1
+                  Seguridad y vigilancia
                 </Dropdown.Item>
                 <Dropdown.Item
                   className={
@@ -101,14 +102,15 @@ function NavBar() {
                 </Dropdown.Item>
                 <Dropdown.Item
                   className={
-                    activeLink === "/service-4"
+                    activeLink === "/limpiezadeobra"
                       ? "menuNavActived menuNav"
                       : "menuNav"
                   }
-                  href="/service-4"
-                  onClick={() => handleLinkClick("/service-4")}
+                  as={Link}
+                  to="/limpiezadeobra"
+                  onClick={() => handleLinkClick("/limpiezadeobra")}
                 >
-                  Servicio 4
+                  Limpieza de obra
                 </Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>

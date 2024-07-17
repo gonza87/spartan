@@ -44,8 +44,10 @@ function Main() {
               card1InView ? "animate__animated animate__fadeInLeftBig" : ""
             }`}
           >
-            <GiSwordwoman color="#D72323" size="6em" />
-            <p>Seguridad y vigilancia</p>
+            <Link to={"/seguridadyvigilancia"}>
+              <GiSwordwoman color="#D72323" size="6em" />
+              <p>Seguridad y vigilancia</p>
+            </Link>
           </div>
 
           <div
@@ -79,8 +81,10 @@ function Main() {
                 : ""
             }`}
           >
-            <GiCenturionHelmet color="#D72323" size="6em" />
-            <p>Limpieza de obra</p>
+            <Link to={"/limpiezadeobra"}>
+              <GiCenturionHelmet color="#D72323" size="6em" />
+              <p>Limpieza de obra</p>
+            </Link>
           </div>
         </div>
       </div>
