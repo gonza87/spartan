@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { useInView } from "react-intersection-observer";
 import {
   GiCenturionHelmet,
@@ -48,6 +49,7 @@ function Main() {
             <GiSwordwoman color="#D72323" size="6em" />
             <p>Seguridad y vigilancia</p>
           </div>
+
           <div
             ref={card2Ref}
             className={`text-center cardService ${
@@ -56,9 +58,12 @@ function Main() {
                 : ""
             }`}
           >
-            <GiDoorway color="#D72323" size="6em" />
-            <p>Portería</p>
+            <Link to={"/porteria"}>
+              <GiDoorway color="#D72323" size="6em" />
+              <p>Portería</p>
+            </Link>
           </div>
+
           <div
             ref={card3Ref}
             className={`text-center cardService ${

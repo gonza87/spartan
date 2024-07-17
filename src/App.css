@@ -187,10 +187,12 @@ body {
 }
 .conntIntroduccion{
   max-width: 700px;
-margin-bottom: 40px;
+  margin-top: 40px;
+margin-bottom: 200px;
 }
 .conntIntroduccion p{
   font-size: 1.3rem;
+
 }
 .titleServices{
   margin-top: 5px;
@@ -205,16 +207,21 @@ margin-bottom: 40px;
   justify-content: center;
   gap:70px;
   flex-wrap: wrap;
-  cursor: pointer;
- 
+   
 }
+
 .cardService p{
 font-size: 1.5rem;
 width: 160px;
 }
 
-.cardService:hover{
-  transform: scale(1.2);
+
+.cardService a{
+  text-decoration: none;
+  color: #F5EDED;
+}
+
+.cardService a:hover{
   color: #D72323;
 }
 
@@ -433,7 +440,7 @@ width: 160px;
 /*** Testimonials ***/
 
 .titleTestimonos{
-  margin-top: 250px;
+  margin-top: 200px;
   font-size:  3rem;
 }
 
