@@ -17,8 +17,8 @@ function ServicePorteria() {
       </div>
       <div className="container">
         <div className="row porteria-content">
-          <div className="col-12 col-lg-6">
-            <div className="contQuienes">
+          <div className="col-12 col-lg-12 d-flex justify-content-center">
+            <div className="textPorteria ">
               <p>
                 El personal de portería se caracteriza por su excelente
                 presencia, siempre vestido con trajes elegantes que reflejan
@@ -30,10 +30,6 @@ function ServicePorteria() {
                 frecuentan el lugar, creando un ambiente de seguridad y
                 familiaridad.
               </p>
-            </div>
-          </div>
-          <div className="col-12 col-lg-6">
-            <div className="contQuienes">
               <p>
                 Además, el personal de portería se distingue por su perfil
                 proactivo, siempre dispuesto a solucionar problemas de manera

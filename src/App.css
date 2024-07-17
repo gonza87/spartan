@@ -678,3 +678,14 @@ font-weight: normal;
   text-align: center;
   
 } 
+
+.textPorteria{
+   max-width: 750px; 
+ 
+  margin-top: 23px;
+  /* background: rgb(0,0,0);
+  background: radial-gradient(circle, rgba(0,0,0,1) 58%, rgba(48,0,0,1) 86%, rgba(0,0,0,1) 100%, rgba(124,0,0,1) 100%); */
+ 
+ 
+  
+}
