@@ -232,6 +232,7 @@ width: 160px;
 .imgCertificado{
   height: 80px;
   margin-bottom: 50px;
+  opacity: 85%;
 }
 
 /****************************************************************************************************************************************/
@@ -697,13 +698,13 @@ font-weight: normal;
 .imgPorteria{
   max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
   height: auto; /* Mantiene la proporción de la imagen */
-  max-height: 400px; /* Ajusta este valor según el tamaño máximo deseado */
+  max-height: 700px; /* Ajusta este valor según el tamaño máximo deseado */
   margin-bottom: 50px;
 }
-/* .textPorteria{
-   max-width: 750px; 
+ .textPorteria{
+   
   margin-top: 23px; 
-} */
+} 
 
 /****************************************************************************************************************************************/
 
@@ -841,3 +842,4 @@ font-weight: normal;
 } 
 
 /****************************************************************************************************************************************/
+
