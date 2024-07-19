@@ -1,0 +1,18 @@
+.pageError {
+  color: #D72323;
+  font-family: sans-serif;
+}
+
+.textError {
+  margin-top: 5vh;
+}
+.text404 {
+  font-size: 10em;
+}
+.textSorry {
+  font-size: 3rem;
+}
+.textOther {
+  font-size: 2rem;
+  margin-bottom: 10vh;
+}

@@ -13,6 +13,7 @@ import ServicePorteria from "./pages/ServicePorteria";
 import ServiceLimpiezaObra from "./pages/ServiceLimpiezaObra";
 import ServiceSeguridadVigilancia from "./pages/ServiceSeguridadVigilancia";
 import ServiceLimpiezaMantenimiento from "./pages/ServiceLimpiezaMantenimiento";
+import NotFound404 from "./pages/pageError/NotFound404";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
@@ -47,6 +48,7 @@ function App() {
                 path="/limpiezamantenimiento"
                 element={<ServiceLimpiezaMantenimiento />}
               />
+              <Route path="*" element={<NotFound404 />} />
             </Routes>
           </div>
         </CSSTransition>
