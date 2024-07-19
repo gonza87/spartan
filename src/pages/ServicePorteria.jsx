@@ -11,10 +11,7 @@ function ServicePorteria() {
       <div className="container">
         <div className="row porteria-content">
           <div className="col-12 col-lg-6 d-flex justify-content-center">
-            <div className="collagePorteria">
-              <div className="img1"></div>
-              <div className="img2"></div>
-              <div className="img3"></div>
+            <div>
               <div>
                 <img
                   src="../.././img/porteria5.jpg"
