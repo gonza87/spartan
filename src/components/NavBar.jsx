@@ -36,7 +36,7 @@ function NavBar() {
           >
             <img
               className="logo animate__animated animate__flip animate__repeat-2"
-              src="/img/logo.PNG"
+              src="/img/logo.png"
               alt="logo"
             />
             <span className="titleLogo">Spartan</span>
