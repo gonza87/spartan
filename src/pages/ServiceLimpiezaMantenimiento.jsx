@@ -23,7 +23,7 @@ function ServiceLimpiezaMantenimiento() {
               </div>
             </div>
           </div>
-          <div className="col-12 col-lg-6 d-flex justify-content-center">
+          <div className="col-12 col-lg-6 d-flex justify-content-center textLimpieza">
             <div>
               <p>
                 Nuestro personal capacitado en limpieza y mantenimiento,

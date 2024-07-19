@@ -11,7 +11,7 @@ function ServiceLimpiezaObra() {
       <div className="container">
         <div className="row limpiezaObra-content">
           <div className="col-12 col-lg-12 d-flex justify-content-center">
-            <div className="textPorteria ">
+            <div className="textPorteria">
               <p>
                 La limpieza de obra es una tarea esencial que requiere atención
                 meticulosa y una gran dedicación. Nuestro personal altamente
