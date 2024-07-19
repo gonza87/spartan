@@ -745,7 +745,13 @@ font-weight: normal;
   text-align: center;
   
 } 
-
+.imgLimpiezaobra{
+  max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  max-height: 500px; /* Ajusta este valor según el tamaño máximo deseado */
+  margin-top: 35px;
+  margin-bottom: 50px;
+}
 /****************************************************************************************************************************************/
 
 /*** Seguridad y vigilancia Page ***/

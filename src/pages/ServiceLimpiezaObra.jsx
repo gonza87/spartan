@@ -10,7 +10,18 @@ function ServiceLimpiezaObra() {
       </div>
       <div className="container">
         <div className="row limpiezaObra-content">
-          <div className="col-12 col-lg-12 d-flex justify-content-center">
+          <div className="col-12 col-lg-6 d-flex justify-content-center">
+            <div>
+              <div>
+                <img
+                  src="../.././img/limpiezaobra.jpg"
+                  alt=""
+                  className="img-fluid imgLimpiezaobra"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="col-12 col-lg-6 d-flex justify-content-center">
             <div className="textPorteria">
               <p>
                 La limpieza de obra es una tarea esencial que requiere atención
