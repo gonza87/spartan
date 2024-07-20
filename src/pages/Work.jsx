@@ -111,9 +111,7 @@ function Work() {
                 onSubmit={sendEmail}
                 encType="multipart/form-data"
               >
-                <h3 className="titleFormWork">
-                  Aplicar a <span className="titleSparta">Spartan</span>
-                </h3>
+                <h3 className="titleFormWork">Aplicar aquí</h3>
                 <div className="form-group">
                   <label htmlFor="user_name">Nombre</label>
                   <input

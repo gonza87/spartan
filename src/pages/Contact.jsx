@@ -130,7 +130,7 @@ function Contact() {
 
               <div className="mt-4">
                 <p className="titleDatos">Horario de atención al cliente:</p>
-                <p className="textoDatos"> Lu a vier de 9 a 18 hrs</p>
+                <p className="textoDatos"> Lunes a Viernes - 9 a 18 h</p>
               </div>
             </div>
           </div>
@@ -192,24 +192,6 @@ function Contact() {
               </button>
             </form>
           </div>
-
-          {/* <div className="col-md-6">
-            <div
-              ref={card2Ref}
-              className={`contenedorHorarios ${
-                card2InView
-                  ? "animate__animated animate__fadeInUpBig animate__slow"
-                  : ""
-              }`}
-            >
-              <p className="titleDatos">Horario laboral:</p>
-              <p className="textoDatos">Lunes 10:00 - 18:00</p>
-              <p className="textoDatos">Martes 10:00 - 18:00</p>
-              <p className="textoDatos">Miércoles 10:00 - 18:00</p>
-              <p className="textoDatos">Jueves 10:00 - 18:00</p>
-              <p className="textoDatos">Viernes 10:00 - 18:00</p>
-            </div>
-          </div> */}
         </div>
       </div>
     </>
