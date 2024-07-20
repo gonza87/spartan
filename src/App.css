@@ -866,7 +866,11 @@ font-weight: normal;
 
 @media (max-width: 576px) {
   /*** Main page ***/
-  
+  .main {
+   
+    background-position: left;
+   
+  }
     .hero-section {
       height: 40vh;
   }
