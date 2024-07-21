@@ -68,8 +68,8 @@ function NavBar() {
                 <Dropdown.Item
                   className={
                     activeLink === "/seguridadyvigilancia"
-                      ? "menuNavActived menuNav"
-                      : "menuNav"
+                      ? "menuNavActived menuNav test"
+                      : "menuNav test"
                   }
                   as={Link}
                   to="/seguridadyvigilancia"

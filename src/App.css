@@ -52,7 +52,6 @@ body {
   
 }
 .custom-dropdown-menu {
-  
   border: 1px solid #000000; /* Borde del menú */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra del menú */
   background-color: #000000; /* Color de fondo del menú */
@@ -863,7 +862,6 @@ font-weight: normal;
 /*** Media Queries ***/
 
 
-
 @media (max-width: 576px) {
   /*** Main page ***/
   .main {
@@ -948,4 +946,11 @@ font-weight: normal;
  margin-top: 0px;
   font-size: 1.2rem;
 }
+}
+
+
+@media (max-width: 992px) {
+  .custom-dropdown-menu {
+    margin-left: 20px;
+  }
 }
