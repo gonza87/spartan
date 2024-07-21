@@ -45,7 +45,7 @@ function Main() {
             }`}
           >
             <Link to={"/seguridadyvigilancia"}>
-              <GiSwordwoman color="#D72323" size="6em" />
+              <GiSwordwoman color="#D72323" size="5em" />
               <p>Seguridad y vigilancia</p>
             </Link>
           </div>
@@ -59,7 +59,7 @@ function Main() {
             }`}
           >
             <Link to={"/porteria"}>
-              <GiDoorway color="#D72323" size="6em" />
+              <GiDoorway color="#D72323" size="5em" />
               <p>Portería</p>
             </Link>
           </div>
@@ -71,7 +71,7 @@ function Main() {
             }`}
           >
             <Link to={"/limpiezamantenimiento"}>
-              <GiSwordWound color="#D72323" size="6em" />
+              <GiSwordWound color="#D72323" size="5em" />
               <p>Limpieza y mantenimiento</p>
             </Link>
           </div>
@@ -84,7 +84,7 @@ function Main() {
             }`}
           >
             <Link to={"/limpiezadeobra"}>
-              <GiCenturionHelmet color="#D72323" size="6em" />
+              <GiCenturionHelmet color="#D72323" size="5em" />
               <p>Limpieza de obra</p>
             </Link>
           </div>
