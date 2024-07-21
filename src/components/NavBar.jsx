@@ -79,13 +79,13 @@ function NavBar() {
                 </Dropdown.Item>
                 <Dropdown.Item
                   className={
-                    activeLink === "/serviceporteria"
+                    activeLink === "/porteria"
                       ? "menuNavActived menuNav"
                       : "menuNav"
                   }
                   as={Link}
                   to="/porteria"
-                  onClick={() => handleLinkClick("/serviceporteria")}
+                  onClick={() => handleLinkClick("/porteria")}
                 >
                   Portería
                 </Dropdown.Item>
