@@ -950,6 +950,27 @@ font-weight: normal;
  margin-top: 0px;
   font-size: 1.2rem;
 }
+
+/*** Seguridad y vigilancia page ***/
+.hero-seguridadVigilancia {
+
+  height: 40vh;
+
+}
+
+.titleseguridadVigilancia {
+  font-size: 2.2rem;
+}
+
+.custom-img-size {
+
+  max-height: 350px;
+}
+
+.seguridadVigilancia-content {
+
+  font-size: 1.2rem;
+}
 }
 
 
