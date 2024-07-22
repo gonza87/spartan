@@ -14,12 +14,10 @@ function Contact() {
   const { ref: card1Ref, inView: card1InView } = useInView({
     triggerOnce: true,
   });
-  const { ref: card2Ref, inView: card2InView } = useInView({
-    triggerOnce: true,
-  });
+
   const sendEmail = (e) => {
     e.preventDefault();
-    // const imgUrl = import.meta.env.VITE_BUCKET_URL;
+
     emailjs
       .sendForm(
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
@@ -54,7 +52,7 @@ function Contact() {
         }
       );
   };
-  const email = "email@gmail.com";
+  const email = "info@spartanseguridad.com.uy";
   const subject = "";
   const body = "";
 
@@ -120,7 +118,7 @@ function Contact() {
 
               <div className="mt-4">
                 <p className="titleDatos">Email:</p>
-                <p className="textoDatos"> seguridad@gmail.com</p>
+                <p className="textoDatos">info@spartanseguridad.com.uy</p>
                 <VscSend
                   className="btnDatos"
                   size={20}

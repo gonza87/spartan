@@ -5,7 +5,7 @@ import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 function WhatsApp() {
   const handleWhatsappClick = () => {
-    const whatsappLink = `https://wa.me/+598000000`;
+    const whatsappLink = `https://wa.me/+59895120110`;
 
     window.location.href = whatsappLink;
   };
