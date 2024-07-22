@@ -19,11 +19,16 @@ function Contact() {
   });
   const sendEmail = (e) => {
     e.preventDefault();
-
+    // const imgUrl = import.meta.env.VITE_BUCKET_URL;
     emailjs
-      .sendForm("service_als3jen", "template_n0ho9al", form.current, {
-        publicKey: "-lChSG6BfOJBOWtiG",
-      })
+      .sendForm(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_CONTACT_TEMPLATE_ID,
+        form.current,
+        {
+          publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+        }
+      )
       .then(
         () => {
           console.log("SUCCESS!");

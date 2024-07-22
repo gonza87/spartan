@@ -33,14 +33,12 @@ function Work() {
         cv_url: uploadedCvUrl, // Añadir el URL del CV aquí
       };
 
-      console.log(emailData); // Verifica que los datos incluyan el cv_url
-
       emailjs
         .send(
-          "service_als3jen",
-          "template_tfhip0g",
+          import.meta.env.VITE_EMAILJS_SERVICE_ID,
+          import.meta.env.VITE_EMAILJS_CV_TEMPLATE_ID,
           emailData,
-          "-lChSG6BfOJBOWtiG"
+          import.meta.env.VITE_EMAILJS_PUBLIC_KEY
         )
         .then(
           () => {

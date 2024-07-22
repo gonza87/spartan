@@ -2,12 +2,12 @@ import { initializeApp } from "firebase/app";
 import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCuhAUEw9W0c_UPDiCaa4ax5YNZpBukE3s",
-    authDomain: "spartan-501f0.firebaseapp.com",
-    projectId: "spartan-501f0",
-    storageBucket: "spartan-501f0.appspot.com",
-    messagingSenderId: "695731577819",
-    appId: "1:695731577819:web:c83ca2fc1defe5437cbdfe"
+    apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+    authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+    projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+    storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: import.meta.env.VITE_FIREBASE_MENSSAGING_SENDER_ID,
+    appId: import.meta.env.VITE_FIREBASE_APP_ID
   };
   
   const app = initializeApp(firebaseConfig);
