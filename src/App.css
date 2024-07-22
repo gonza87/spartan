@@ -953,9 +953,7 @@ font-weight: normal;
 
 /*** Seguridad y vigilancia page ***/
 .hero-seguridadVigilancia {
-
   height: 40vh;
-
 }
 
 .titleseguridadVigilancia {
@@ -963,13 +961,27 @@ font-weight: normal;
 }
 
 .custom-img-size {
-
   max-height: 350px;
 }
 
 .seguridadVigilancia-content {
+  font-size: 1.2rem;
+  }
+  
+  /*** Porteria page ***/
+  .hero-porteria {
+    height: 40vh;
+  }
+  
+  .imgPorteria {
+  
+    max-height: 350px;
+  }
+  
+  .porteria-content {
 
   font-size: 1.2rem;
+  
 }
 }
 
