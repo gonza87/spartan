@@ -109,7 +109,7 @@ function Contact() {
       </div>
       <div className="container">
         <div className="row contact-content">
-          <div className="col-md-4 mt-5">
+          <div className="col-lg-4 mt-5">
             <div
               ref={card1Ref}
               className={`contenedorDatos ${
@@ -153,7 +153,7 @@ function Contact() {
             </div>
           </div>
 
-          <div className="col-md-8 mb-5">
+          <div className="col-lg-8 mb-5">
             <form className="contact-form" ref={form} onSubmit={sendEmail}>
               <h2 className="titleFormContact">
                 Si deseas más información, puedes ponerte en contacto con
