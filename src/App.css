@@ -972,16 +972,16 @@ font-weight: normal;
   .hero-porteria {
     height: 40vh;
   }
-  
-  .imgPorteria {
-  
+    
+    .titlePorteria {
+      font-size: 2.2rem;
+    }
+    .imgPorteria {
     max-height: 350px;
   }
   
-  .porteria-content {
-
+    .porteria-content {
   font-size: 1.2rem;
-  
 }
 }
 
