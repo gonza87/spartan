@@ -87,12 +87,12 @@ function Contact() {
   };
 
   const handleCall = () => {
-    const phoneNumber = "+598000000";
+    const phoneNumber = "26838533";
     window.location.href = `tel:${phoneNumber}`;
   };
 
   const handleWhatsappClick = () => {
-    const whatsappLink = `https://wa.me/+5980000000`;
+    const whatsappLink = `https://wa.me/+59895120110`;
 
     window.location.href = whatsappLink;
   };
@@ -118,7 +118,7 @@ function Contact() {
             >
               <div>
                 <p className="titleDatos">Teléfono:</p>
-                <p className="textoDatos">+598 00 00 00</p>
+                <p className="textoDatos">2683 8533</p>
                 <IoCallOutline
                   size={20}
                   className="btnDatos"

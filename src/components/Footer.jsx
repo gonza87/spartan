@@ -9,7 +9,7 @@ function Footer() {
         <div className="contEmailTel mt-2">
           <p>Email: info@spartanseguridad.com.uy</p>
           <p className="ps-1 pe-1">|</p>
-          <p>Tel: +598 00 00 00</p>
+          <p>Tel: 2683 8533</p>
         </div>
 
         <hr />
