@@ -14,5 +14,30 @@
 }
 .textOther {
   font-size: 2rem;
-  margin-bottom: 10vh;
 }
+
+
+
+
+
+.btnRetunToHome{
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  background-color: #7c0000;
+  color: #F5EDED;
+  height: auto;
+  font-size: 1.5rem;
+  padding: 10px 30px;
+  border-style: none;
+ cursor: pointer;
+ transition: ease; 
+ 
+} 
+
+.btnRetunToHome:hover {
+  background-color: #D72323; 
+  color:#000000; 
+  
+  
+}
+
