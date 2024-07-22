@@ -5,7 +5,7 @@ function ServiceLimpiezaObra() {
     <>
       <div className="hero-limpiezaObra">
         <div className="limpiezaObra-content container">
-          <h2 className="titlePorteria mt-5">Limpieza de obra</h2>
+          <h2 className="titleLimpiezaObra mt-5">Limpieza de obra</h2>
         </div>
       </div>
       <div className="container">
@@ -22,7 +22,7 @@ function ServiceLimpiezaObra() {
             </div>
           </div>
           <div className="col-12 col-lg-6 d-flex justify-content-center">
-            <div className="textPorteria">
+            <div className="textLimpiezaObra">
               <p>
                 La limpieza de obra es una tarea esencial que requiere atención
                 meticulosa y una gran dedicación. Nuestro personal altamente

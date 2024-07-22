@@ -748,6 +748,9 @@ font-weight: normal;
   text-align: center;
   
 } 
+.textLimpiezaObra{
+  margin-top: 20px;
+}
 .imgLimpiezaobra{
   max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
   height: auto; /* Mantiene la proporción de la imagen */
@@ -983,8 +986,48 @@ font-weight: normal;
     .porteria-content {
   font-size: 1.2rem;
 }
+/*** Limpieza y mantenimiento page ***/
+.hero-limpiezaMantenimiento { 
+  height: 40vh;
+}
+.titleLimpiezaMantenimiento {
+  font-size: 2.2rem;
+ 
+}
+.imgLimpieza {
+ 
+  max-height: 350px;
+ 
+}
+.limpiezaMantenimiento-content {
+
+  font-size: 1.2rem;
+  
 }
 
+/*** Limpieza de obra page ***/
+.hero-limpiezaObra {
+  
+  height: 40vh;
+  
+}
+.titleLimpiezaObra {
+  font-size: 2.2rem;
+ 
+}
+.imgLimpiezaobra {
+  
+  max-height: 350px;
+  
+}
+
+.limpiezaObra-content {
+ 
+  font-size: 1.2rem;
+ 
+}
+
+}
 
 @media (max-width: 992px) {
   .custom-dropdown-menu {
