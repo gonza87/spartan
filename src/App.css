@@ -697,11 +697,12 @@ font-weight: normal;
   text-align: center;
   
 } 
-.imgPorteria{
-  max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
-  height: auto; /* Mantiene la proporción de la imagen */
-  max-height: 700px; /* Ajusta este valor según el tamaño máximo deseado */
-  margin-bottom: 50px;
+.imgPorteria {
+  max-width: 100%;
+  height: auto;
+  max-height: 500px;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
  .textPorteria{
    
@@ -755,8 +756,8 @@ font-weight: normal;
   max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
   height: auto; /* Mantiene la proporción de la imagen */
   max-height: 500px; /* Ajusta este valor según el tamaño máximo deseado */
-  margin-top: 35px;
-  margin-bottom: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 /****************************************************************************************************************************************/
 
@@ -803,7 +804,7 @@ font-weight: normal;
   max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
   height: auto; /* Mantiene la proporción de la imagen */
   max-height: 400px; /* Ajusta este valor según el tamaño máximo deseado */
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .contImgVigilancia {
@@ -857,8 +858,8 @@ font-weight: normal;
   max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
   height: auto; /* Mantiene la proporción de la imagen */
   max-height: 500px; /* Ajusta este valor según el tamaño máximo deseado */
-  margin-top: 35px;
-  margin-bottom: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .textLimpieza{
