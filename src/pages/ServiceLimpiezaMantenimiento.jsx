@@ -1,6 +1,11 @@
 import React from "react";
+import { useInView } from "react-intersection-observer";
 
 function ServiceLimpiezaMantenimiento() {
+  const { ref: card1Ref, inView: card1InView } = useInView({
+    triggerOnce: true,
+  });
+
   return (
     <>
       <div className="hero-limpiezaMantenimiento">
@@ -24,7 +29,12 @@ function ServiceLimpiezaMantenimiento() {
             </div>
           </div>
           <div className="col-12 col-lg-6 d-flex justify-content-center textLimpieza">
-            <div>
+            <div
+              ref={card1Ref}
+              className={`${
+                card1InView ? "animate__animated animate__fadeInUp" : ""
+              }`}
+            >
               <p>
                 Nuestro personal capacitado en limpieza y mantenimiento,
                 debidamente uniformado, se distingue por su eficiencia y

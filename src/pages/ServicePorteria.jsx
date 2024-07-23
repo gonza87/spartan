@@ -1,6 +1,11 @@
 import React from "react";
+import { useInView } from "react-intersection-observer";
 
 function ServicePorteria() {
+  const { ref: card1Ref, inView: card1InView } = useInView({
+    triggerOnce: true,
+  });
+
   return (
     <>
       <div className="hero-porteria">
@@ -22,7 +27,12 @@ function ServicePorteria() {
             </div>
           </div>
           <div className="col-12 col-lg-6 d-flex justify-content-center">
-            <div className="textPorteria ">
+            <div
+              ref={card1Ref}
+              className={`textPorteria ${
+                card1InView ? "animate__animated animate__fadeInUp" : ""
+              }`}
+            >
               <p>
                 El personal de portería se caracteriza por su excelente
                 presencia, siempre vestido con trajes elegantes que reflejan

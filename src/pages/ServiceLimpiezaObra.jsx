@@ -1,6 +1,11 @@
 import React from "react";
+import { useInView } from "react-intersection-observer";
 
 function ServiceLimpiezaObra() {
+  const { ref: card1Ref, inView: card1InView } = useInView({
+    triggerOnce: true,
+  });
+
   return (
     <>
       <div className="hero-limpiezaObra">
@@ -22,7 +27,12 @@ function ServiceLimpiezaObra() {
             </div>
           </div>
           <div className="col-12 col-lg-6 d-flex justify-content-center">
-            <div className="textLimpiezaObra">
+            <div
+              ref={card1Ref}
+              className={`textLimpiezaObra ${
+                card1InView ? "animate__animated animate__fadeInUp" : ""
+              }`}
+            >
               <p>
                 La limpieza de obra es una tarea esencial que requiere atención
                 meticulosa y una gran dedicación. Nuestro personal altamente
