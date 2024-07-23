@@ -28,7 +28,7 @@ function ServiceSeguridadVigilancia() {
             <div className="contImgVigilancia">
               <img
                 src="../.././img/vigilancia.jpg"
-                alt=""
+                alt="vigilancia"
                 className="img-fluid custom-img-size"
               />
             </div>

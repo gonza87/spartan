@@ -20,7 +20,7 @@ function ServicePorteria() {
               <div>
                 <img
                   src="../.././img/porteria5.jpg"
-                  alt=""
+                  alt="porteria"
                   className="img-fluid imgPorteria"
                 />
               </div>

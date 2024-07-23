@@ -20,7 +20,7 @@ function ServiceLimpiezaObra() {
               <div>
                 <img
                   src="../.././img/limpiezaobra.jpg"
-                  alt=""
+                  alt="limpieza"
                   className="img-fluid imgLimpiezaobra"
                 />
               </div>
