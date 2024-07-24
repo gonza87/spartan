@@ -9,7 +9,7 @@ function HeroSection() {
           <div className="col-md-7">
             <h1 className="titleHero">
               Somos una empresa que te brinda soluciones en{" "}
-              <span>Seguridad</span>
+              <span>seguridad</span> y limpieza
             </h1>
           </div>
           <div className="col-md-5 d-flex justify-content-center">
