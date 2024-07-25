@@ -14,7 +14,7 @@ function ServiceLimpiezaMantenimiento() {
             Limpieza y mantenimiento
           </h2>
           <div className="container">
-            <div className="row limpiezaMantenimiento-content mb-5">
+            <div className="row limpiezaMantenimiento-content">
               <div className="col-12 col-lg-6 d-flex justify-content-center order-lg-2">
                 <div>
                   <div>

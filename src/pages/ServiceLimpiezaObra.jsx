@@ -10,7 +10,7 @@ function ServiceLimpiezaObra() {
     <>
       <div className="hero-limpiezaObra">
         <div className="limpiezaObra-content container">
-          <h2 className="titleLimpiezaObra mt-5">Limpieza de obra</h2>
+          <h2 className="titleLimpiezaObra">Limpieza de obra</h2>
         </div>
       </div>
       <div className="container">
