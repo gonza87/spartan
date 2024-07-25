@@ -68,14 +68,14 @@ function NavBar() {
                 <Dropdown.Item
                   className={
                     activeLink === "/seguridadyvigilancia"
-                      ? "menuNavActived menuNav test"
-                      : "menuNav test"
+                      ? "menuNavActived menuNav"
+                      : "menuNav"
                   }
                   as={Link}
                   to="/seguridadyvigilancia"
                   onClick={() => handleLinkClick("/seguridadyvigilancia")}
                 >
-                  Seguridad y vigilancia
+                  <span className="textDrpdown">Seguridad y vigilancia</span>
                 </Dropdown.Item>
                 <Dropdown.Item
                   className={
@@ -87,7 +87,7 @@ function NavBar() {
                   to="/porteria"
                   onClick={() => handleLinkClick("/porteria")}
                 >
-                  Portería
+                  <span className="textDrpdown">Portería</span>
                 </Dropdown.Item>
                 <Dropdown.Item
                   className={
@@ -99,7 +99,7 @@ function NavBar() {
                   to="/limpiezamantenimiento"
                   onClick={() => handleLinkClick("/limpiezamantenimiento")}
                 >
-                  Limpieza y mantenimiento
+                  <span className="textDrpdown">Limpieza y mantenimiento</span>
                 </Dropdown.Item>
                 <Dropdown.Item
                   className={
@@ -111,7 +111,7 @@ function NavBar() {
                   to="/limpiezadeobra"
                   onClick={() => handleLinkClick("/limpiezadeobra")}
                 >
-                  Limpieza de obra
+                  <span className="textDrpdown">Limpieza de obra</span>
                 </Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>

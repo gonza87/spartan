@@ -35,6 +35,7 @@ body {
 
 }
 
+
 .menuNavActived{
   color: #D72323 !important;
   text-decoration: none;
@@ -57,7 +58,9 @@ body {
   background-color: #000000; /* Color de fondo del menú */
  
 }
-
+.textDrpdown{
+  font-size: 1.3rem;
+}
 .custom-dropdown-menu a:hover{
   background-color: #D72323;
   color: black !important;
