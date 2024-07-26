@@ -701,18 +701,19 @@ font-weight: normal;
   margin-bottom: 50px;
   font-size: 4rem;
   color: #F5EDED;
-  text-align: center;
-  
+  text-align: center;  
 } 
+
 .imgPorteria {
   max-width: 100%;
   height: auto;
   max-height: 500px;
   margin-bottom: 30px;
   margin-top: 30px;
+  opacity: 80%;
 }
- .textPorteria{
-   
+
+.textPorteria{   
   margin-top: 23px; 
 } 
 
