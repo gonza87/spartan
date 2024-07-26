@@ -16,14 +16,12 @@ function ServiceLimpiezaMantenimiento() {
           <div className="container">
             <div className="row limpiezaMantenimiento-content">
               <div className="col-12 col-lg-6 d-flex justify-content-center order-lg-2">
-                <div>
-                  <div>
-                    <img
-                      src="../.././img/limpieza.jpg"
-                      alt="limpieza"
-                      className="img-fluid imgLimpieza"
-                    />
-                  </div>
+                <div className="animate__animated animate__zoomIn">
+                  <img
+                    src="../.././img/limpieza.jpg"
+                    alt="limpieza"
+                    className="img-fluid imgLimpieza"
+                  />
                 </div>
               </div>
               <div className="col-12 col-lg-6 d-flex justify-content-center textLimpieza order-lg-1">

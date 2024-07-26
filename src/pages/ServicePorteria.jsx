@@ -14,14 +14,12 @@ function ServicePorteria() {
 
           <div className="row porteria-content">
             <div className="col-12 col-lg-6 d-flex justify-content-center">
-              <div>
-                <div>
-                  <img
-                    src="../.././img/porteria5.jpg"
-                    alt="porteria"
-                    className="img-fluid imgPorteria"
-                  />
-                </div>
+              <div className="animate__animated animate__zoomIn">
+                <img
+                  src="../.././img/porteria5.jpg"
+                  alt="porteria"
+                  className="img-fluid imgPorteria"
+                />
               </div>
             </div>
             <div className="col-12 col-lg-6 d-flex justify-content-center">
