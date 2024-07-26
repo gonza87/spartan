@@ -542,14 +542,14 @@ width: 160px;
 
 .hero-work {
   position: relative;
-  height: 60vh; /* Ajusta según tus necesidades */
+  height: auto; /* Ajusta según tus necesidades */
   display: flex;
   align-items: center;
   background-image: url(".././img/spartan06.jpg");
   background-size: cover;
   overflow: hidden; /* Asegura que el contenido dentro no se desborde */
   box-shadow: inset 0 0 14px 16px rgba(7, 8, 8, 1);
-  background-position: center 15%;
+  background-position: center 2%;
 }
 
 .hero-work::before {
@@ -569,10 +569,11 @@ width: 160px;
   z-index: 2;
   color: #ffffff; /* Color del texto sobre la imagen */
   font-size: 1.5rem;
-
+  margin-bottom: 50px;
 }
 
  .titleWork{
+  margin-top: 100px;
   font-size: 4rem;
   color: #F5EDED;
   text-align: center;
@@ -584,7 +585,7 @@ font-weight: normal;
   font-size: 1.3rem;
 }
 .titleCultura{
-  margin-top: 40px;
+  margin-top: 50px;
     text-align: center;
     font-size: 2rem;
     color: #D72323;
@@ -951,12 +952,13 @@ font-weight: normal;
   /*******************************************************************************************/
 
   /*** Work page ***/
-    .hero-work {
-      height: 40vh;
-    }
+   
     .titleWork {
+      margin-top: 30px;
+      
       font-size: 2.2rem; 
     }
+   
     .work-content, .contNuestraCultura{
       font-size: 1.2rem;
     }
