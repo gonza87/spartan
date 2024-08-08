@@ -521,9 +521,9 @@ width: 160px;
   animation: bounce 0.5s infinite alternate;
   border-radius: 50%;
   background-color: #25d366;
-  
   padding: 12px;
   z-index: 3;
+  transition: ease 0.5s;
 }
 
 .whatsapp-icon:hover {
