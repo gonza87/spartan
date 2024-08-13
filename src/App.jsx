@@ -14,6 +14,7 @@ import ServiceLimpiezaObra from "./pages/ServiceLimpiezaObra";
 import ServiceSeguridadVigilancia from "./pages/ServiceSeguridadVigilancia";
 import ServiceLimpiezaMantenimiento from "./pages/ServiceLimpiezaMantenimiento";
 import NotFound404 from "./pages/pageError/NotFound404";
+import ScrollToTop from "./components/ScrollToTop";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
@@ -23,6 +24,7 @@ function App() {
 
   return (
     <>
+      <ScrollToTop />
       <Header />
 
       <TransitionGroup>
