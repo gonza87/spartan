@@ -67,7 +67,7 @@ function Contact() {
         }
       );
   };
-  const email = "info@spartanseguridad.com.uy";
+  const email = "contacto@spartanseguridad.com.uy";
   const subject = "";
   const body = "";
 
