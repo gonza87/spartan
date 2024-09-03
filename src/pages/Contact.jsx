@@ -130,7 +130,7 @@ function Contact() {
 
                 <div className="mt-4">
                   <p className="titleDatos">Email:</p>
-                  <p className="textoDatos">info@spartanseguridad.com.uy</p>
+                  <p className="textoDatos">contacto@spartanseguridad.com.uy</p>
                   <VscSend
                     className="btnDatos"
                     size={20}
