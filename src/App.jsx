@@ -13,6 +13,7 @@ import ServicePorteria from "./pages/ServicePorteria";
 import ServiceLimpiezaObra from "./pages/ServiceLimpiezaObra";
 import ServiceSeguridadVigilancia from "./pages/ServiceSeguridadVigilancia";
 import ServiceLimpiezaMantenimiento from "./pages/ServiceLimpiezaMantenimiento";
+import TrabajosRealizados from "./pages/TrabajosRealizados";
 import NotFound404 from "./pages/pageError/NotFound404";
 import ScrollToTop from "./components/ScrollToTop";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -42,6 +43,10 @@ function App() {
               <Route path="/about" element={<About />} />
               <Route path="/porteria" element={<ServicePorteria />} />
               <Route path="/limpiezadeobra" element={<ServiceLimpiezaObra />} />
+              <Route
+                path="/trabajosRealizados"
+                element={<TrabajosRealizados />}
+              />
               <Route
                 path="/seguridadyvigilancia"
                 element={<ServiceSeguridadVigilancia />}

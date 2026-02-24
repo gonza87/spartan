@@ -126,6 +126,17 @@ function NavBar() {
             </Link>
             <Link
               className={
+                activeLink === "/trabajosRealizados"
+                  ? "menuNavActived menuNav"
+                  : "menuNav"
+              }
+              to={"/trabajosRealizados"}
+              onClick={() => handleLinkClick("/trabajosRealizados")}
+            >
+              Nuestros Trabajos
+            </Link>
+            <Link
+              className={
                 activeLink === "/work" ? "menuNavActived menuNav" : "menuNav"
               }
               to={"/work"}

@@ -1073,3 +1073,6 @@ font-weight: normal;
     margin-left: 20px;
   }
 }
+.card {
+  transition: transform 0.3s ease;
+}
