@@ -91,9 +91,6 @@ function Main() {
         </div>
       </div>
       <div className="main-content container">
-        <h2 className="text-center titleTestimonos">Testimonios</h2>
-        <TestimonialsCarousel />
-
         <div className="text-center">
           <h2 className="text-center titleCertificaciones">Certificaciones</h2>
           <img
