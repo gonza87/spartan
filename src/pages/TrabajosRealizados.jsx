@@ -187,7 +187,7 @@ function TrabajosRealizados() {
                     </div>
                   </Col>
                 ))}
-                <h2 className="text-center mb-5">Más Recientes</h2>
+                <h2 className="text-center mt-4 mb-5">Más Recientes</h2>
                 {proyectosRecientes.map((proyecto) => (
                   <Col key={proyecto.id} xs={12} md={6} lg={4} className="mb-4">
                     <div
@@ -210,7 +210,7 @@ function TrabajosRealizados() {
                     </div>
                   </Col>
                 ))}
-                <h2 className="text-center mb-5">Realizados</h2>
+                <h2 className="text-center mt-4 mb-5">Realizados</h2>
                 {proyectosRealizados.map((proyecto) => (
                   <Col key={proyecto.id} xs={12} md={6} lg={4} className="mb-4">
                     <div
